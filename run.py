@@ -1,9 +1,14 @@
+import random 
+
+
+
 def start_game():
-    start = input("Would you like to start the game? Y/N:")
-
-
-
-
+    while True:
+        try:
+            start = input("Would you like to start the game? Y/N: ")
+            print(f"You chose {start}")
+        except ValueError:
+            print("I didn't ask for that did I?")
 
 
 
