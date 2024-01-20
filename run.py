@@ -3,10 +3,10 @@ import random
 
 
 def start_game():
-    user_response = input("Would you like to start the game? Y/N: \n")
-    if user_response == "Y" or "y":
+    user_response = input("Would you like to start the game? Y/N: \n").upper()
+    if user_response == "Y":
         print("Entering Game Now...\n")
-    elif user_response == "N" or"n":
+    elif user_response == "N":
         print("Exiting Game Now...\n")
     else:
         print("Invalid input, please enter Y or N.")
