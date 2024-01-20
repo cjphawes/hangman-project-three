@@ -18,7 +18,7 @@ def start_game():
             print("Exiting Game Now...\n")
             break
         else:
-            print("Invalid input, please enter Y or N.")
+            print("Invalid input, please enter Y or N.\n")
 
     # try:
     #     print(f"You chose {user_response}")
