@@ -3,13 +3,22 @@ import random
 
 
 def start_game():
-    user_response = input("Would you like to start the game? Y/N: \n").upper()
-    if user_response == "Y":
-        print("Entering Game Now...\n")
-    elif user_response == "N":
-        print("Exiting Game Now...\n")
-    else:
-        print("Invalid input, please enter Y or N.")
+    """
+    Asks user if they are ready to start the game, if Y then they will enter
+    the game, if N they will exit the game, if Invalid input they will receive
+    an error and asked for the correct input
+    """
+    while True:
+        user_response = input("Would you like to start the game? Y/N: ").upper()
+
+        if user_response == "Y":
+            print("Entering Game Now...\n")
+            break
+        elif user_response == "N":
+            print("Exiting Game Now...\n")
+            break
+        else:
+            print("Invalid input, please enter Y or N.")
 
     # try:
     #     print(f"You chose {user_response}")
