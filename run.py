@@ -1,4 +1,14 @@
 def checkDeploy():
-    print("app is deployingggggggggg")
+    print("app is deploying")
 
-checkDeploy()
+
+
+
+
+
+
+def main():
+    checkDeploy()
+
+print("Welcome to Hangman Havoc!\n")
+main()
