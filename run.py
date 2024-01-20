@@ -1,5 +1,5 @@
-def checkDeploy():
-    print("app is deploying")
+def start_game():
+    start = input("Would you like to start the game? Y/N:")
 
 
 
@@ -8,7 +8,7 @@ def checkDeploy():
 
 
 def main():
-    checkDeploy()
+    start_game()
 
 print("Welcome to Hangman Havoc!\n")
 main()
