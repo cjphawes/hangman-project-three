@@ -3,7 +3,6 @@ import random
 
 
 def start_game():
-    while True:
         try:
             start = input("Would you like to start the game? Y/N: ")
             print(f"You chose {start}")
