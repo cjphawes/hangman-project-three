@@ -20,9 +20,9 @@ def start_game():
             exit()
         else:
             print("I didn't ask for that did I?, please enter Y or N.\n")
-    print(f"Here are the rules:\n1. Insert your username\n2. I will give you a
+    print(f"Here are the rules:\1. Insert your username\2. I will give you a
         word to guess, it is your job to guess the letters that make up
-        that word.\n3. ")
+        that word.\3. ")
 
     # try:
     #     print(f"You chose {user_response}")
