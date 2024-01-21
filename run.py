@@ -22,12 +22,12 @@ def start_game():
             print("I didn't ask for that did I?, please enter Y or N.\n")
     rules = (
         f"Here are the rules:\n"
-        f"1. Insert your username\n"
+        f"1. Insert your username.\n"
         f"2. I will give you a word to guess, it is your job to guess\n"
         f"   the letters that make up that word.\n" 
-        f"3. Input a letter and I will tell you if it is in the word or not\n"
-        f"4. Keep guessing a letter until you either lose all your lives or"
-        f"   you guess the word correctly."
+        f"3. Input a letter and I will tell you if it is in the word or not.\n"
+        f"4. Keep guessing a letter until you either, lose all your lives or\n"
+        f"   you guess the word correctly.\n"
         f"5. Finally, Have Fun!"
         )
     print(rules)
