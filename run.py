@@ -1,8 +1,10 @@
-import random 
+import random
+# import 
+# from 
 
 
 
-def start_game():
+def start_game(user_response, rules):
     """
     Asks user if they are ready to start the game, with user validation and
     display the rules of the game
@@ -20,6 +22,7 @@ def start_game():
             exit()
         else:
             print("I didn't ask for that did I?, please enter Y or N.\n")
+
     rules = (
         f"Here are the rules:\n"
         f"1. Insert your username.\n"
@@ -28,17 +31,30 @@ def start_game():
         f"3. Input a letter and I will tell you if it is in the word or not.\n"
         f"4. Keep guessing a letter until you either, lose all your lives or\n"
         f"   you guess the word correctly.\n"
-        f"5. Finally, Have Fun!"
+        f"5. Finally, Have Fun!\n"
         )
     print(rules)
 
+def input_username(username):
+    """
+    Asks user for username, with user validation to make sure there are no
+    invalid inputs
+    """
+    username = ""
+    user_input = input(f"What will your username be?: {username}\n")
     # try:
-    #     print(f"You chose {user_response}")
+
     # except ValueError:
-    #     print("I didn't ask for that did I?")
+
+    # finally:
+
+
+    print(f"Okay {username}, let's get started!\n")
+
 
 
 def main():
     start_game()
+    input_username()
 
 main()
