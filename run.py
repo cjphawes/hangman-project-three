@@ -27,6 +27,7 @@ def start_game():
         f"the letters that make up that word.\n" 
         f"3. "
         )
+    print(rules)
 
     # try:
     #     print(f"You chose {user_response}")
