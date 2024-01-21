@@ -24,8 +24,11 @@ def start_game():
         f"Here are the rules:\n"
         f"1. Insert your username\n"
         f"2. I will give you a word to guess, it is your job to guess\n"
-        f"the letters that make up that word.\n" 
-        f"3. "
+        f"   the letters that make up that word.\n" 
+        f"3. Input a letter and I will tell you if it is in the word or not\n"
+        f"4. Keep guessing a letter until you either lose all your lives or"
+        f"   you guess the word correctly."
+        f"5. Finally, Have Fun!"
         )
     print(rules)
 
