@@ -4,9 +4,8 @@ import random
 
 def start_game():
     """
-    Asks user if they are ready to start the game, if Y then they will enter
-    the game, if N they will exit the game, if Invalid input they will receive
-    an error and asked for the correct input
+    Asks user if they are ready to start the game, with user validation and
+    display the rules of the game
     """
     while True:
         user_response = input("Would you like to start the game? Y/N: ").upper()
@@ -21,7 +20,9 @@ def start_game():
             exit()
         else:
             print("I didn't ask for that did I?, please enter Y or N.\n")
-    print("Here are the rules:\n1. Did this work correctly")
+    print(f"Here are the rules:\n1. Insert your username\n2. I will give you a
+        word to guess, it is your job to guess the letters that make up
+        that word.\n3. ")
 
     # try:
     #     print(f"You chose {user_response}")
