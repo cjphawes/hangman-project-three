@@ -14,6 +14,7 @@ def start_game():
         if user_response == "Y":
             print("Entering Game Now...\n")
             print("Welcome to Hangman Havoc!\n")
+            break
         elif user_response == "N":
             print("Exiting Game Now...\n")
             break
