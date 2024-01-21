@@ -16,11 +16,13 @@ def start_game():
             print("Welcome to Hangman Havoc!\n")
             break
         elif user_response == "N":
-            print("Exiting Game Now...\n")
+            print("Exiting Game Now...\nThank you for playing!")
+            
             exit()
         else:
             print("I didn't ask for that did I?, please enter Y or N.\n")
     print("Here are the rules:\n1. Did this work correctly")
+
     # try:
     #     print(f"You chose {user_response}")
     # except ValueError:
