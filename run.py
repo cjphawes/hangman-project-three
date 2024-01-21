@@ -20,12 +20,11 @@ def start_game():
             break
         else:
             print("I didn't ask for that did I?, please enter Y or N.\n")
-
+    print("Here are the rules:\n1. Did this work correctly")
     # try:
     #     print(f"You chose {user_response}")
     # except ValueError:
     #     print("I didn't ask for that did I?")
-
 
 
 def main():
