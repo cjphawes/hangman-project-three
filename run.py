@@ -17,7 +17,7 @@ def start_game():
             break
         elif user_response == "N":
             print("Exiting Game Now...\n")
-            break
+            exit()
         else:
             print("I didn't ask for that did I?, please enter Y or N.\n")
     print("Here are the rules:\n1. Did this work correctly")
