@@ -4,7 +4,7 @@ import random
 
 
 
-def start_game(user_response, rules):
+def start_game():
     """
     Asks user if they are ready to start the game, with user validation and
     display the rules of the game
@@ -35,19 +35,14 @@ def start_game(user_response, rules):
         )
     print(rules)
 
-def input_username(username):
+def input_username():
     """
     Asks user for username, with user validation to make sure there are no
     invalid inputs
     """
     username = ""
     user_input = input(f"What will your username be?: {username}\n")
-    # try:
-
-    # except ValueError:
-
-    # finally:
-
+    # if username.includes():
 
     print(f"Okay {username}, let's get started!\n")
 
