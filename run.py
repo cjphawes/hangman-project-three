@@ -13,7 +13,7 @@ def start_game():
 
         if user_response == "Y":
             print("Entering Game Now...\n")
-            break
+            print("Welcome to Hangman Havoc!\n")
         elif user_response == "N":
             print("Exiting Game Now...\n")
             break
@@ -31,4 +31,3 @@ def main():
     start_game()
 
 main()
-print("Welcome to Hangman Havoc!\n")
