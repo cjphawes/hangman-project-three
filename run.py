@@ -18,7 +18,6 @@ def start_game():
             break
         elif user_response == "N":
             print("Exiting Game Now...\nThank you for playing!")
-            
             exit()
         else:
             print("I didn't ask for that did I?, please enter Y or N.\n")
@@ -40,10 +39,7 @@ def input_username():
     Asks user for username, with user validation to make sure there are no
     invalid inputs
     """
-    username = ""
-    user_input = input(f"What will your username be?: {username}\n")
-    # if username.includes():
-
+    username = input("What will your username be?: ")
     print(f"Okay {username}, let's get started!\n")
 
 
