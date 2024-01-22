@@ -16,7 +16,7 @@ def start_game():
             print("Entering Game Now...\n")
             print("Welcome to...\n")
             file = open("hangman_title.txt", "r")
-            lines = file.read().center(50)
+            lines = file.read()
             file.close()
             print(lines)
             break
@@ -27,14 +27,14 @@ def start_game():
             print("I didn't ask for that did I?, please enter Y or N.\n")
 
     rules = (
-        f"Here are the rules:\n"
+        f"\n\nHere are the rules:\n"
         f"1. Insert your username.\n"
-        f"2. I will give you a word to guess, it is your job to guess\n"
-        f"   the letters that make up that word.\n" 
-        f"3. Input a letter and I will tell you if it is in the word or not.\n"
-        f"4. Keep guessing a letter until you either, lose all your lives or\n"
-        f"   you guess the word correctly.\n"
-        f"5. Finally, Have Fun!\n"
+        f"2. I will give you a word, it is your job to guess the letters\n"
+        f"   that make up that word.\n" 
+        f"3. Guess a letter and I will tell you if it is correct or not.\n"
+        f"4. Keep guessing until you either, lose all your lives or you\n"
+        f"   guess the word correctly.\n"
+        f"5. Finally, have fun!\n"
         )
     print(rules)
 
@@ -44,20 +44,24 @@ def input_username():
     invalid inputs
     """
     while True:
-        try:
-            username = str(input("What will your username be?: ")).capitalize()
+        username = input("What will your username be?: ").capitalize().strip()
+        if username.isalpha():
+            print(f"\nOkay {username}, let's get started, here is your word!\n")
             break
-        except ValueError:
+        else:
             print(
                 f"{username} is not a valid username, please use one without"
-                f"numbers, special characters")
+                f" numbers or special characters"
+                )
+    return username
 
-    print(f"\nOkay {username}, let's get started, here is your word!\n")
+# def display_word():
 
 
 
 def main():
     start_game()
     input_username()
+    # display_word()
 
 main()
