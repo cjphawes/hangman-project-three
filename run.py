@@ -42,6 +42,7 @@ def input_username():
     while True:
         try:
             username = str(input("What will your username be?: ")).capitalize()
+            break
         except ValueError:
             print(
                 f"{username} is not a valid username, please use one without"
