@@ -25,9 +25,11 @@ def start_game():
             exit()
         else:
             print("I didn't ask for that did I?, please enter Y or N.\n")
+    return user_response
 
+def display_rules():
     rules = (
-        f"\n\nHere are the rules:\n"
+        f"\n\nHere are the rules:\n\n"
         f"1. Insert your username.\n"
         f"2. I will give you a word, it is your job to guess the letters\n"
         f"   that make up that word.\n" 
@@ -61,6 +63,7 @@ def input_username():
 
 def main():
     start_game()
+    display_rules()
     input_username()
     # display_word()
 
