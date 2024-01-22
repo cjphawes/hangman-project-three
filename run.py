@@ -39,7 +39,14 @@ def input_username():
     Asks user for username, with user validation to make sure there are no
     invalid inputs
     """
-    username = input("What will your username be?: ").capitalize()
+    while True:
+        try:
+            username = str(input("What will your username be?: ")).capitalize()
+        except ValueError:
+            print(
+                f"{username} is not a valid username, please use one without"
+                f"numbers, special characters")
+
     print(f"Okay {username}, let's get started, here is your word!\n")
 
 
