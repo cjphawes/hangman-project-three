@@ -50,8 +50,8 @@ def input_username():
             break
         else:
             print(
-                f"{username} is not a valid username, please use one without"
-                f" numbers or special characters"
+                f"{username} is not a valid username, please use one without\n"
+                f"numbers or special characters"
                 )
     return username
 
