@@ -48,7 +48,7 @@ def input_username():
                 f"{username} is not a valid username, please use one without"
                 f"numbers, special characters")
 
-    print(f"Okay {username}, let's get started, here is your word!\n")
+    print(f"\nOkay {username}, let's get started, here is your word!\n")
 
 
 
