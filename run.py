@@ -39,8 +39,8 @@ def input_username():
     Asks user for username, with user validation to make sure there are no
     invalid inputs
     """
-    username = input("What will your username be?: ")
-    print(f"Okay {username}, let's get started!\n")
+    username = input("What will your username be?: ").capitalize()
+    print(f"Okay {username}, let's get started, here is your word!\n")
 
 
 
