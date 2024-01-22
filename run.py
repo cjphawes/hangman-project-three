@@ -14,7 +14,11 @@ def start_game():
 
         if user_response == "Y":
             print("Entering Game Now...\n")
-            print("Welcome to Hangman Havoc!\n")
+            print("Welcome to...\n")
+            file = open("hangman_title.txt", "r")
+            lines = file.read().center(50)
+            file.close()
+            print(lines)
             break
         elif user_response == "N":
             print("Exiting Game Now...\nThank you for playing!")
