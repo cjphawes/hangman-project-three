@@ -1,6 +1,6 @@
 import random
+from words import list_of_words
 # import 
-# from 
 
 
 
@@ -57,14 +57,15 @@ def input_username():
                 )
     return username
 
-# def display_word():
-
+def display_word():
+    new_word = random.choice(list_of_words)
+    print(new_word)
 
 
 def main():
     start_game()
     display_rules()
     input_username()
-    # display_word()
+    display_word()
 
 main()
