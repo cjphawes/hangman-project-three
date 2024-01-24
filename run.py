@@ -1,6 +1,6 @@
 import random
 from words import list_of_words
-# import 
+import emoji
 
 
 
@@ -30,15 +30,19 @@ def display_rules():
     """
     Displays the rules for the game
     """
+    heart_emoji = emoji.emojize("\u2764\ufe0f")
+
     rules = (
         f"\n\nHere are the rules:\n\n"
         f"1. Insert your username.\n"
         f"2. I will give you a word, it is your job to guess the letters\n"
         f"   that make up that word.\n" 
-        f"3. Guess a letter and I will tell you if it is correct or not.\n"
-        f"4. Keep guessing until you either, lose all your lives or you\n"
+        f"3. You have {heart_emoji}  Lives available, every time you get a\n"
+        f"   letter incorrect, you will lose a life."
+        f"4. Guess a letter and I will tell you if it is correct or not.\n"
+        f"5. Keep guessing until you either, lose all your lives or you\n"
         f"   guess the word correctly.\n"
-        f"5. Finally, have fun!\n"
+        f"6. Finally, have fun!\n"
         )
     print(rules)
 
@@ -51,7 +55,7 @@ def input_username():
         username = input("What will your username be?: ").capitalize().strip()
 
         if username.isalpha():
-            print(f"\nOkay {username}, let's get started, here is your word!\n")
+            print(f"\nOkay {username}, let's get started!\n")
             break
         else:
             print(
@@ -67,7 +71,7 @@ def get_correct_word(list_of_words):
     """
     new_word = random.choice(list_of_words)
 
-    while "-" in new_word or "" in new_word:
+    while "-" in new_word or " " in new_word:
         new_word = random.choice(list_of_words)
         
     return new_word.upper()
