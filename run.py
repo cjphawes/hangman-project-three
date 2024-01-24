@@ -6,8 +6,7 @@ from words import list_of_words
 
 def start_game():
     """
-    Asks user if they are ready to start the game, with user validation and
-    display the rules of the game
+    Asks user if they are ready to start the game, with user validation
     """
     while True:
         user_response = input("Would you like to start the game? Y/N: ").upper()
@@ -28,6 +27,9 @@ def start_game():
     return user_response
 
 def display_rules():
+    """
+    Displays the rules for the game
+    """
     rules = (
         f"\n\nHere are the rules:\n\n"
         f"1. Insert your username.\n"
@@ -47,6 +49,7 @@ def input_username():
     """
     while True:
         username = input("What will your username be?: ").capitalize().strip()
+
         if username.isalpha():
             print(f"\nOkay {username}, let's get started, here is your word!\n")
             break
@@ -57,15 +60,29 @@ def input_username():
                 )
     return username
 
-def display_word():
+def get_correct_word(list_of_words):
+    """
+    Get a valid random word from the list of words available and display to 
+    the user
+    """
     new_word = random.choice(list_of_words)
-    print(new_word)
+
+    while "-" in new_word or "" in new_word:
+        new_word = random.choice(list_of_words)
+        
+    return new_word.upper()
+
+# def validate_letter():
+#     new_word = get_correct_word(list_of_words)
+#     word_makeup = set(new_word)
 
 
 def main():
     start_game()
     display_rules()
-    input_username()
-    display_word()
+    user = input_username()
+    display_word = get_correct_word(list_of_words)
+    print(f"{user} your word is {display_word}")
+
 
 main()
