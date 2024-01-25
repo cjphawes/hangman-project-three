@@ -31,7 +31,7 @@ def start_game():
             exit()
         else:
             print(f"{confused_emoji} I didn't ask for that did I?, please" 
-                  " enter Y or N.\n")
+                " enter Y or N.\n")
     return user_response
 
 def display_rules():
@@ -76,8 +76,8 @@ def input_username():
             break
         else:
             print(Fore.RED + 
-                f"{prohibited} {username} is an INVALID username, please use one without\n"
-                "numbers, special characters or spaces."
+                f"{prohibited} {username} is an INVALID username, please use" 
+                " one without numbers, special characters or spaces."
                 )
             print(Style.RESET_ALL)
     return username
@@ -127,13 +127,16 @@ def guess_word():
         
             else:
                 lives_allowed = lives_allowed - 1
-                print(f"Incorrect! You have {lives_allowed} {heart_emoji} 's remaining.")
+                print(f"Incorrect! You have {lives_allowed} {heart_emoji} 's"
+                    " remaining.")
 
         elif letter_guess in guessed_letters:
-            print(f"{cross_emoji} Whoops! You cannot guess the same letter twice. Please try again.")
+            print(f"{cross_emoji} Whoops! You cannot guess the same letter"
+                " twice. Please try again.")
 
         else:
-            print(Fore.RED + f"{prohibited} INVALID character, please try again.")
+            print(Fore.RED + f"{prohibited} INVALID character, please try"
+                " again.")
             print(Style.RESET_ALL)
 
         #telling the user what letters they have guessed
