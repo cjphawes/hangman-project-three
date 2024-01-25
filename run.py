@@ -115,7 +115,7 @@ def guess_word():
     Grabbing the users input for a letter guess and seeing if it is a letter
     they have guessed already or not
     """    
-    while len(word_makeup) > 1 and lives_allowed > 1:
+    while len(word_makeup) > 0 and lives_allowed > 0:
         letter_guess = input("Guess a letter: ").upper()
 
         if letter_guess in alphabet - guessed_letters:
