@@ -1,14 +1,14 @@
-#
+#Built-in imports
+import string
 import random
 import os
-from words import list_of_words
-import string
+#3rd party imports
 from colorama import Fore, Style
-
-#I understand concern with using * however i know i won't reuse names, put in README
+#Local imports
 from number_styling import *
 from emoji_dict import *
 from rules import rules
+from words import list_of_words
 
 def start_game():
     """
@@ -43,19 +43,26 @@ def enter_game():
             print("Entering Game Now...\n")
             break
         elif user_response == "N":
-            user_response_2 = input(
-                f"Are you sure?: {color_green}Y{styling_end}/{color_red}N"
-                f"{styling_end}: "
-                ).upper()
+            while True:
+                user_response_2 = input(
+                    f"Are you sure?: {color_green}Y{styling_end}/{color_red}N"
+                    f"{styling_end}: "
+                    ).upper()
 
-            if user_response_2 == "Y":
-                print(f"I miss you already {sad_face})\nThank you for playing!"
-                f"{waving_hand}")
-                exit()
-            else:
-                print(f"OH REALLY {crazy_face}")
-                enter_game()
-            return user_response_2
+                if user_response_2 == "Y":
+                    print(
+                        f"\nBut we didn't even get to play together {sad_face}\n"
+                        f"Thank you for playing! {waving_hand}"
+                        )
+                    exit()
+                elif user_response_2 == "N":
+                    print(f"\nOH REALLY {crazy_face}")
+                    break
+                else:
+                    print(
+                        f"{confused_emoji} I didn't ask for that did I?, please"
+                        f" enter Y or N.\n"
+                        )
         else:
             print(
                 f"{confused_emoji} I didn't ask for that did I?, please"
@@ -155,11 +162,6 @@ def guess_word():
         print(f"Yay! You did it {face_with_hearts}\n")
     return word_makeup
 
-    play_again = input(
-        f"Would you like to start the game again? {color_green}Y"
-        f"{styling_end}/{color_red}N{styling_end}: "
-        ).upper()
-
 def restart_game():
     """
     This function holds all the functions used to play the game after the 
@@ -173,11 +175,30 @@ def restart_game():
             ).upper()
         
         if play_again == "Y":
-            print("Restarting game now...\n")
+            print(
+                f"YES! I like you {crazy_face} Let's go again!\n")
             restart_functions()
         elif play_again == "N": 
-            print(f"Exiting Game Now...\n\nThank you for playing!{waving_hand}")
-            exit()
+            while True:
+                play_again_2 = input(
+                    f"Are you sure?: {color_green}Y{styling_end}/{color_red}N"
+                    f"{styling_end}: "
+                    ).upper()
+
+                if play_again_2 == "Y":
+                    print(
+                        f"\nBut we were having so much fun {sad_face}\n"
+                        f"Thank you for playing! {waving_hand}")
+                    exit()
+                elif play_again_2 == "N":
+                    print(f"\nOH REALLY {crazy_face}")
+                    break
+                else:
+                    print(
+                        f"{confused_emoji} I didn't ask for that did I?, please"
+                        f" enter Y or N.\n"
+                        )
+            restart_game()
         else:
             print(
                 f"{confused_emoji} I didn't ask for that did I?, please enter"
