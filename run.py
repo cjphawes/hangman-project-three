@@ -20,20 +20,27 @@ shocked_face,
 face_with_hearts,
 winky_face)
 
-print("\n\nWELCOME TO...\n")
-file = open("hangman_title.txt", "r")
-lines = file.read()
-file.close()
-print(lines)
-print("")
-
-
 def start_game():
     """
-    Asks user if they are ready to start the game, with user validation
+    Introduces the game and provides a small introduction into what the game 
+    entails
     """
+    print("\n\nWELCOME TO...\n")
+    file = open("hangman_title.txt", "r")
+    lines = file.read()
+    file.close()
+    print(lines)
+    print("\n\nThe exciting word-guessing game where your vocabulary skills"
+        " are put to the test! In this game, you have a limited number of lives"
+        " to guess the hidden word correctly. With each incorrect guess, you'll"
+        " lose a life. Can you figure out the word and avoid running out of"
+        " lives? Challenge yourself and see how many words you can solve in a"
+        " row! Let's dive in and start guessing!\n\n")
+
+def enter_game():
+    # Asks user if they are ready to start the game, with user validation
     while True:
-        user_response = input(f"\n\nWould you like to start the game? {color_green}"
+        user_response = input(f"Would you like to start the game? {color_green}"
             f"Y{styling_end}/{color_red}N{styling_end}: ").upper()
 
         if user_response == "Y":
@@ -61,8 +68,9 @@ def display_rules():
         f" until you either, lose all your {heart_emoji} 's, or you guess the"
         f" word correctly {green_tick}\n{color_white}6.{styling_end} You will"
         f" not know the length of the word until you make your first guess!"
-        f" Mysterious I know {winky_face} It could be 4 letters or upto 9!\n{color_white}"
-        f"5.{styling_end} Finally, insert your username and have fun!\n")
+        f" Mysterious I know {winky_face} It could be 4 letters or upto 9!\n"
+        f"{color_white}5.{styling_end} Finally, insert your username and"
+        f"have fun!\n")
     print(rules)
 
 def input_username():
@@ -184,6 +192,7 @@ def restart_game():
 
 def main():
     start_game()
+    enter_game()
     display_rules()
     input_username()
     get_correct_word(list_of_words)
