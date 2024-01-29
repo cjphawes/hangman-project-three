@@ -15,7 +15,7 @@ def start_game():
     Introduces the game and provides a small introduction into what the game 
     entails
     """
-    print("\n\nWELCOME TO...\n")
+    print("\nWELCOME TO...\n")
     file = open("hangman_title.txt", "r")
     lines = file.read()
     file.close()
@@ -179,7 +179,7 @@ def restart_game():
         
         if play_again == "Y":
             print(
-                f"YES! I like you {crazy_face} Let's go again!\n")
+                f"YES! I like you {crazy_face}  Let's go again!\n")
             restart_functions()
         elif play_again == "N": 
             while True:
