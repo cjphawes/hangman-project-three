@@ -1,9 +1,13 @@
 import random
+import os
 from words import list_of_words
 import string
 from colorama import Fore, Style
-
-#I wanted to use best practice here rather than just using *
+from number_styling import (underline,
+color_white, 
+color_green,
+color_red,
+styling_end)
 from emoji_dict import (waving_hand,
 confused_emoji,
 heart_emoji,
@@ -13,8 +17,15 @@ writing,
 prohibited,
 cross_emoji,
 shocked_face,
-face_with_hearts)
+face_with_hearts,
+winky_face)
 
+print("\n\nWELCOME TO...\n")
+file = open("hangman_title.txt", "r")
+lines = file.read()
+file.close()
+print(lines)
+print("")
 
 
 def start_game():
@@ -22,17 +33,11 @@ def start_game():
     Asks user if they are ready to start the game, with user validation
     """
     while True:
-        user_response = input(
-            "Would you like to start the game?" + " \033[1;32mY\033[0m"
-            + "/" + "\033[0;31mN\033[0m" + ": ").upper()
+        user_response = input(f"\n\nWould you like to start the game? {color_green}"
+            f"Y{styling_end}/{color_red}N{styling_end}: ").upper()
 
         if user_response == "Y":
             print("Entering Game Now...\n")
-            print("Welcome to...\n")
-            file = open("hangman_title.txt", "r")
-            lines = file.read()
-            file.close()
-            print(lines)
             break
         elif user_response == "N":
             print(f"Exiting Game Now...\nThank you for playing!{waving_hand}")
@@ -46,16 +51,18 @@ def display_rules():
     """
     Displays the rules for the game
     """
-    rules = (f"""\n\n\033[4mHere are the rules\033[0m" + f"{writing}\n\n
-        \033[1;37m1.\033[0m" + " I will give you a word, it is your job to
-        guess the letters that make up that word.\n 
-        \033[1;37m2.\033[0m" + f" You have 8 {heart_emoji_multiplied}
-        lives available, every time you get a letter incorrect, you" 
-        will lose a {heart_emoji}\n\033[1;37m3.\033[0m" + " Guess a letter and 
-        I will tell you if it is correct or not.\n\033[1;37m4.\033[0m" + " Keep
-        guessing until you either, lose all your {heart_emoji} 's, or you guess
-        the word correctly {green_tick}\n\033[1;37m5.\033[0m" + " Finally, 
-        insert your username and have fun!\n""")
+    rules = (f"\n\n{underline}Here are the rules{styling_end} {writing}\n\n"
+        f"{color_white}1.{styling_end} I will give you a mystery word, it is"
+        f" your job to guess the letters that make up that word.\n{color_white}"
+        f"2.{styling_end} You have 8 {heart_emoji_multiplied}  lives available,"
+        f" every time you get a letter incorrect, you will lose a {heart_emoji}"
+        f"\n{color_white}3.{styling_end} Guess a letter and I will tell you if"
+        f" it is correct or not.\n{color_white}4.{styling_end} Keep guessing"
+        f" until you either, lose all your {heart_emoji} 's, or you guess the"
+        f" word correctly {green_tick}\n{color_white}6.{styling_end} You will"
+        f" not know the length of the word until you make your first guess!"
+        f" Mysterious I know {winky_face} It could be 4 letters or upto 9!\n{color_white}"
+        f"5.{styling_end} Finally, insert your username and have fun!\n")
     print(rules)
 
 def input_username():
@@ -72,8 +79,9 @@ def input_username():
         else:
             print(Fore.RED + 
                 f"""{prohibited} {username} is an INVALID username, please use 
-                one without numbers, special characters or spaces.""")
-            print(Style.RESET_ALL)
+                one without numbers, special characters or spaces.""" +
+                Style.RESET_ALL)
+            # print(Style.RESET_ALL)
     return username
 
 def get_correct_word(list_of_words):
@@ -124,8 +132,8 @@ def guess_word():
 
         else:
             print(Fore.RED + f"""{prohibited} INVALID character, please try
-                again.""")
-            print(Style.RESET_ALL)
+                again.""" + Style.RESET_ALL)
+            # print(Style.RESET_ALL)
 
         #telling the user what letters they have guessed
         print("You have have used letters: ", ' '.join(guessed_letters))
