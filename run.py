@@ -8,6 +8,7 @@ from colorama import Fore, Style
 #I understand concern with using * however i know i won't reuse names, put in README
 from number_styling import *
 from emoji_dict import *
+from rules import rules
 
 def start_game():
     """
@@ -42,8 +43,19 @@ def enter_game():
             print("Entering Game Now...\n")
             break
         elif user_response == "N":
-            print(f"Exiting Game Now...\nThank you for playing!{waving_hand}")
-            exit()
+            user_response_2 = input(
+                f"Are you sure?: {color_green}Y{styling_end}/{color_red}N"
+                f"{styling_end}: "
+                ).upper()
+
+            if user_response_2 == "Y":
+                print(f"I miss you already {sad_face})\nThank you for playing!"
+                f"{waving_hand}")
+                exit()
+            else:
+                print(f"OH REALLY {crazy_face}")
+                enter_game()
+            return user_response_2
         else:
             print(
                 f"{confused_emoji} I didn't ask for that did I?, please"
@@ -53,24 +65,6 @@ def enter_game():
 
 def display_rules():
     # Displays the rules for the game
-    rules = (
-        f"\n{underline}Here are the rules{styling_end} {writing}\n\n"
-        f"{color_white}1.{styling_end} I will give you a mystery word, it is"
-        f" your job to guess the letters that make up that word.\n{color_white}"
-        f"2.{styling_end} You have 8 {heart_emoji_multiplied}  lives available,"
-        f" every time you get a letter incorrect, you will lose a {heart_emoji}"
-        f"\n{color_white}3.{styling_end} Guess a letter and I will tell you if"
-        f" it is correct or not.\n{color_white}4.{styling_end} Keep guessing"
-        f" until you either, lose all your {heart_emoji} 's, or you guess the"
-        f" word correctly {green_tick}\n{color_white}6.{styling_end} You will"
-        f" not know the length of the word until you make your first guess!"
-        f" Mysterious I know {winky_face}  It could be from 4-9 letters long!"
-        f" Who knows?{shrug_emoji}\n{color_white}5.{styling_end} {color_white}"
-        f"BE AWARE!{styling_end} There may be singular {color_white}OR"
-        f"{styling_end} plural words you may encounter.\n{color_white}6." 
-        f"{styling_end} Finally, insert your username and have fun!" 
-        f" {crazy_face}\n"
-        )
     print(rules)
 
 def input_username():
@@ -157,37 +151,14 @@ def guess_word():
             f"You {color_white}LOST!{styling_end}{shocked_face}\nThe word was"
             + f" {color_white}{underline}{new_word}{styling_end}\n"
             )
-        play_again = input(
-            f"Would you like to start the game again? {color_green}Y"
-            f"{styling_end}/{color_red}N{styling_end}: "
-            ).upper()
-        if play_again == "Y":
-            print("Restarting game now...")
-            #Code to restart game
-        elif play_again == "N": 
-            print(f"Exiting Game Now...\n\nThank you for playing!{waving_hand}")
-        else:
-            print(
-                f"{confused_emoji} I didn't ask for that did I?, please enter"
-                f" Y or N.\n"
-                )
     else:
-        print(f"Yay! You did it {face_with_hearts}")
-        play_again = input(
-            f"Would you like to start the game? {color_green}Y{styling_end}/"
-            f"{color_red}N{styling_end}: "
-            ).upper()
-        if play_again == "Y":
-            print("Restarting game now...")
-            #Code to restart game
-        elif play_again == "N":
-            print(f"Exiting Game Now...\nThank you for playing!{waving_hand}")
-        else:
-            print(
-                f"{confused_emoji} I didn't ask for that did I?, please enter"
-                f" Y or N.\n"
-                )
+        print(f"Yay! You did it {face_with_hearts}\n")
     return word_makeup
+
+    play_again = input(
+        f"Would you like to start the game again? {color_green}Y"
+        f"{styling_end}/{color_red}N{styling_end}: "
+        ).upper()
 
 def restart_game():
     """
@@ -195,6 +166,31 @@ def restart_game():
     display rules function, when the user decides they want to play the game 
     again.
     """
+    while True:
+        play_again = input(
+            f"Would you like to start the game again? {color_green}Y"
+            f"{styling_end}/{color_red}N{styling_end}: "
+            ).upper()
+        
+        if play_again == "Y":
+            print("Restarting game now...\n")
+            restart_functions()
+        elif play_again == "N": 
+            print(f"Exiting Game Now...\n\nThank you for playing!{waving_hand}")
+            exit()
+        else:
+            print(
+                f"{confused_emoji} I didn't ask for that did I?, please enter"
+                f" Y or N.\n"
+                )
+
+def restart_functions():
+    """
+    This function holds all the functions needed to restart the game in a
+    continuous loop if the user wishes to play again
+    """
+    get_correct_word(list_of_words)
+    guess_word()
 
 
 def main():
