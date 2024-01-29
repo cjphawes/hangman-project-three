@@ -1,8 +1,19 @@
 import random
 from words import list_of_words
-import emoji
 import string
 from colorama import Fore, Style
+
+#I wanted to use best practice here rather than just using *
+from emoji_dict import (waving_hand,
+confused_emoji,
+heart_emoji,
+heart_emoji_multiplied,
+green_tick,
+writing,
+prohibited,
+cross_emoji,
+shocked_face,
+face_with_hearts)
 
 
 
@@ -10,9 +21,6 @@ def start_game():
     """
     Asks user if they are ready to start the game, with user validation
     """
-    waving_hand = emoji.emojize("\U0001F44B")
-    confused_emoji = emoji.emojize("\U0001F928")
-
     while True:
         user_response = input(
             "Would you like to start the game?" + " \033[1;32mY\033[0m"
@@ -38,12 +46,6 @@ def display_rules():
     """
     Displays the rules for the game
     """
-    heart_emoji = emoji.emojize("\u2764\ufe0f")
-    heart_emoji_multiplied = heart_emoji * 8
-    green_tick = emoji.emojize("\u2705")
-    writing = emoji.emojize("\U0001F4DD")
-    
-
     rules = (
         f"\n\n\033[4mHere are the rules\033[0m" + f"{writing}\n\n"
         "\033[1;37m1.\033[0m" + " I will give you a word, it is your job to"
@@ -66,10 +68,8 @@ def input_username():
     Asks user for username, with user validation to make sure there are no
     invalid inputs
     """
-    prohibited = emoji.emojize("\U0001F6AB")
-
     while True:
-        username = input("What will your username be?: ").capitalize().strip()
+        username = input("What will your username be?: ").strip().capitalize()
 
         if username.isalpha():
             print(f"\nOkay {username}, let's get started!\n")
@@ -99,12 +99,6 @@ def guess_word():
     Validates the letter chosen if it is either in or not in the word that is
     being guessed by the user
     """
-    heart_emoji = emoji.emojize("\u2764\ufe0f")
-    cross_emoji = emoji.emojize("\u274C")
-    green_tick = emoji.emojize("\u2705")
-    prohibited = emoji.emojize("\U0001F6AB")
-    shocked_face = emoji.emojize("\U0001F626")
-
     new_word = get_correct_word(list_of_words)
     word_makeup = set(new_word) #tell us the letters that make up the word
     alphabet = set(string.ascii_uppercase) #letters of alphabet in CAPS
@@ -127,12 +121,12 @@ def guess_word():
         
             else:
                 lives_allowed = lives_allowed - 1
-                print(f"Incorrect! You have {lives_allowed} {heart_emoji} 's"
-                    " remaining.")
+                print(f"Incorrect, You lost a life! You now have"
+                    f"{lives_allowed} {heart_emoji} 's remaining.")
 
         elif letter_guess in guessed_letters:
-            print(f"{cross_emoji} Whoops! You cannot guess the same letter"
-                " twice. Please try again.")
+            print(f"{cross_emoji} Whoops! You cannot guess the same letter
+                twice. Please try again.")
 
         else:
             print(Fore.RED + f"{prohibited} INVALID character, please try"
@@ -148,27 +142,41 @@ def guess_word():
         print("Your word is: ", ' '.join(word_list))
         print("")
 
-    print(f"You Lost!{shocked_face}")
-    print("The word was" + f" {new_word}")
-
+    if lives_allowed == 0:
+        print(f"You Lost!{shocked_face}\nThe word was" + f" {new_word}")
+        play_again = input(
+            "Would you like to restart the game?" + " \033[1;32mY\033[0m"
+            + "/" + "\033[0;31mN\033[0m" + ": ").upper()
+        if play_again == "Y":
+            print("Restarting game now...")
+            #Code to restart game
+        elif play_again == "N": 
+            print(f"Exiting Game Now...\nThank you for playing!{waving_hand}")
+        else:
+            print(f"{confused_emoji} I didn't ask for that did I?, please" 
+                " enter Y or N.\n")
+    else:
+        print(f"Yay! You did it {face_with_hearts}")
+        play_again = input(
+            "Would you like to restart the game?" + " \033[1;32mY\033[0m"
+            + "/" + "\033[0;31mN\033[0m" + ": ").upper()
+        if play_again == "Y":
+            print("Restarting game now...")
+            #Code to restart game
+        elif play_again == "N":
+            print(f"Exiting Game Now...\nThank you for playing!{waving_hand}")
+        else:
+            print(f"{confused_emoji} I didn't ask for that did I?, please" 
+                " enter Y or N.\n")
     return word_makeup
 
-# def restart_game():
-#     """
-#     Asks the user if they want to play another game or exit the program
-#     """
-#     main()
+def restart_game():
+    """
+    This function holds all the functions used to play the game after the 
+    display rules function, when the user decides they want to play the game 
+    again.
+    """
 
-#     # waving_hand = emoji.emojize("\U0001F44B")
-
-#     # reset_answer = input("Would you like to play again?" + " \033[1;32mY\033[0m"
-#     #         + "/" + "\033[0;31mN\033[0m" + ": ").upper()
-    
-#     # if reset_answer == "Y":
-#     #     start_game()
-#     # elif reset_answer == "N":
-#     #     print(f"Exiting Game Now...\nThank you for playing!{waving_hand}")
-#     #     exit()
 
 
 
@@ -178,6 +186,6 @@ def main():
     input_username()
     get_correct_word(list_of_words)
     guess_word()
-    # restart_game()
+    restart_game()
 
 main()
