@@ -83,8 +83,6 @@ def input_username():
         username = input("What will your username be?: ").strip().capitalize()
 
         if username.isalpha():
-            os.system("cls")
-            os.system("clear")
             print(
                 f"\nI created you some space {username},"
                 f" Let's Get Guessing!\n"
