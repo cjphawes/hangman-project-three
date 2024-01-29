@@ -38,29 +38,24 @@ def start_game():
             print(f"Exiting Game Now...\nThank you for playing!{waving_hand}")
             exit()
         else:
-            print(f"{confused_emoji} I didn't ask for that did I?, please" 
-                " enter Y or N.\n")
+            print(f"""{confused_emoji} I didn't ask for that did I?, please 
+                enter Y or N.\n""")
     return user_response
 
 def display_rules():
     """
     Displays the rules for the game
     """
-    rules = (
-        f"\n\n\033[4mHere are the rules\033[0m" + f"{writing}\n\n"
-        "\033[1;37m1.\033[0m" + " I will give you a word, it is your job to"
-        " guess the letters that make up that word.\n" 
-        f"\033[1;37m2.\033[0m" + f" You have 8 {heart_emoji_multiplied}"
-        "  lives available, every time you get a letter incorrect, you" 
-        f" will lose a {heart_emoji}\n"
-        "\033[1;37m3.\033[0m" + " Guess a letter and I will tell you if it"
-        " is correct or not.\n"
-        "\033[1;37m4.\033[0m" + " Keep guessing until you either, lose"
-        f" all your {heart_emoji} 's, or you guess the word correctly" 
-        f" {green_tick}\n"
-        "\033[1;37m5.\033[0m" + " Finally, insert your username and" 
-        " have fun!\n"
-        )
+    rules = (f"""\n\n\033[4mHere are the rules\033[0m" + f"{writing}\n\n
+        \033[1;37m1.\033[0m" + " I will give you a word, it is your job to
+        guess the letters that make up that word.\n 
+        \033[1;37m2.\033[0m" + f" You have 8 {heart_emoji_multiplied}
+        lives available, every time you get a letter incorrect, you" 
+        will lose a {heart_emoji}\n\033[1;37m3.\033[0m" + " Guess a letter and 
+        I will tell you if it is correct or not.\n\033[1;37m4.\033[0m" + " Keep
+        guessing until you either, lose all your {heart_emoji} 's, or you guess
+        the word correctly {green_tick}\n\033[1;37m5.\033[0m" + " Finally, 
+        insert your username and have fun!\n""")
     print(rules)
 
 def input_username():
@@ -76,9 +71,8 @@ def input_username():
             break
         else:
             print(Fore.RED + 
-                f"{prohibited} {username} is an INVALID username, please use" 
-                " one without numbers, special characters or spaces."
-                )
+                f"""{prohibited} {username} is an INVALID username, please use 
+                one without numbers, special characters or spaces.""")
             print(Style.RESET_ALL)
     return username
 
@@ -121,16 +115,16 @@ def guess_word():
         
             else:
                 lives_allowed = lives_allowed - 1
-                print(f"Incorrect, You lost a life! You now have"
-                    f"{lives_allowed} {heart_emoji} 's remaining.")
+                print(f"""Incorrect, You lost a life! You now have
+                    {lives_allowed} {heart_emoji} 's remaining.""")
 
         elif letter_guess in guessed_letters:
-            print(f"{cross_emoji} Whoops! You cannot guess the same letter
-                twice. Please try again.")
+            print(f"""{cross_emoji} Whoops! You cannot guess the same letter
+                twice. Please try again.""")
 
         else:
-            print(Fore.RED + f"{prohibited} INVALID character, please try"
-                " again.")
+            print(Fore.RED + f"""{prohibited} INVALID character, please try
+                again.""")
             print(Style.RESET_ALL)
 
         #telling the user what letters they have guessed
@@ -153,8 +147,8 @@ def guess_word():
         elif play_again == "N": 
             print(f"Exiting Game Now...\nThank you for playing!{waving_hand}")
         else:
-            print(f"{confused_emoji} I didn't ask for that did I?, please" 
-                " enter Y or N.\n")
+            print(f"""{confused_emoji} I didn't ask for that did I?, please 
+                enter Y or N.\n""")
     else:
         print(f"Yay! You did it {face_with_hearts}")
         play_again = input(
@@ -166,8 +160,8 @@ def guess_word():
         elif play_again == "N":
             print(f"Exiting Game Now...\nThank you for playing!{waving_hand}")
         else:
-            print(f"{confused_emoji} I didn't ask for that did I?, please" 
-                " enter Y or N.\n")
+            print(f"""{confused_emoji} I didn't ask for that did I?, please
+                enter Y or N.\n""")
     return word_makeup
 
 def restart_game():
