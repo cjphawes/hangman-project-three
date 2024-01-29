@@ -52,7 +52,7 @@ def enter_game():
                 if user_response_2 == "Y":
                     print(
                         f"\nBut we didn't even get to play together {sad_face}"
-                        f"\nThank you for playing! {waving_hand}"
+                        f"\nThank you for playing!{waving_hand}"
                         )
                     exit()
                 elif user_response_2 == "N":
@@ -83,7 +83,11 @@ def input_username():
         username = input("What will your username be?: ").strip().capitalize()
 
         if username.isalpha():
-            print(f"\nOkay {username}, let's get started!\n")
+            os.system("cls")
+            print(
+                f"\nI created you some space {username},"
+                f" Let's Get Guessing!\n"
+                )
             break
         else:
             print(Fore.RED + 
@@ -177,7 +181,6 @@ def restart_game():
         if play_again == "Y":
             print(
                 f"YES! I like you {crazy_face} Let's go again!\n")
-            os.system("cls")
             restart_functions()
         elif play_again == "N": 
             while True:
@@ -189,7 +192,7 @@ def restart_game():
                 if play_again_2 == "Y":
                     print(
                         f"\nBut we were having so much fun {sad_face}\n"
-                        f"Thank you for playing! {waving_hand}")
+                        f"Thank you for playing!{waving_hand}")
                     exit()
                 elif play_again_2 == "N":
                     print(f"\nOH REALLY {crazy_face}")
