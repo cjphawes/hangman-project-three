@@ -84,6 +84,7 @@ def input_username():
 
         if username.isalpha():
             os.system("cls")
+            os.system("clear")
             print(
                 f"\nI created you some space {username},"
                 f" Let's Get Guessing!\n"
