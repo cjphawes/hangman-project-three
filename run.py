@@ -84,7 +84,7 @@ def input_username():
 
         if username.isalpha():
             print(
-                f"\nI created you some space {username},"
+                f"\nAwesome username {username},"
                 f" Let's Get Guessing!\n"
                 )
             break
