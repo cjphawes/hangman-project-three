@@ -45,8 +45,8 @@ def enter_game():
         elif user_response == "N":
             while True:
                 user_response_2 = input(
-                    f"Are you sure?: {color_green}Y{styling_end}/{color_red}N"
-                    f"{styling_end}: "
+                    f"Are you a quitter?: {color_green}Y"
+                    f"{styling_end}/{color_red}N{styling_end}: "
                     ).upper()
 
                 if user_response_2 == "Y":
@@ -56,7 +56,7 @@ def enter_game():
                         )
                     exit()
                 elif user_response_2 == "N":
-                    print(f"\nOH REALLY {crazy_face}")
+                    print(f"\nI DIDN'T THINK SO {crazy_face}  LET'S GO!")
                     break
                 else:
                     print(
