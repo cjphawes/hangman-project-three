@@ -1,18 +1,19 @@
-#Built-in imports
+# Built-in imports
 import string
 import random
 import os
-#3rd party imports
+# 3rd party imports
 from colorama import Fore, Style
-#Local imports
+# Local imports
 from number_styling import *
 from emoji_dict import *
 from rules import rules
 from words import list_of_words
 
+
 def start_game():
     """
-    Introduces the game and provides a small introduction into what the game 
+    Introduces the game and provides a small introduction into what the game
     entails
     """
     print("\nWELCOME TO...\n")
@@ -23,13 +24,14 @@ def start_game():
     print(
         f"\n\nThe exciting word-guessing game where your vocabulary skills"
         f" are put to the test! In this game, you have a limited number"
-        f" of {heart_emoji}  lives to guess the hidden word correctly. With" 
+        f" of {heart_emoji}  lives to guess the hidden word correctly. With"
         f" each incorrect guess, you'll lose a {heart_emoji}  life. Can"
         f" {color_white}YOU{styling_end} figure out the word and avoid running"
         f" out of lives? {color_white}Challenge{styling_end} yourself and see"
         f" how many words you can solve in a row! Let's dive in and start"
         f" guessing!\n\n"
         )
+
 
 def enter_game():
     # Asks user if they are ready to start the game, with user validation
@@ -70,9 +72,11 @@ def enter_game():
                 )
     return user_response
 
+
 def display_rules():
     # Displays the rules for the game
     print(rules)
+
 
 def input_username():
     """
@@ -89,23 +93,24 @@ def input_username():
                 )
             break
         else:
-            print(Fore.RED + 
-                f"{prohibited} {username} is an INVALID username, please use"
-                f" one without numbers, special characters or spaces.\n" +
-                Style.RESET_ALL)
+            print(Fore.RED + f"{prohibited} {username} is an INVALID username,"
+                  f" please use one without numbers, special characters or"
+                  f" spaces.\n" + Style.RESET_ALL)
     return username
+
 
 def get_correct_word(list_of_words):
     """
-    Get a valid random word from the list of words available and display to 
+    Get a valid random word from the list of words available and display to
     the user
     """
     new_word = random.choice(list_of_words)
 
     while "-" in new_word or " " or len(new_word) < 4 in new_word:
         new_word = random.choice(list_of_words)
-        
+
     return new_word.upper()
+
 
 def guess_word():
     """
@@ -113,15 +118,15 @@ def guess_word():
     being guessed by the user
     """
     new_word = get_correct_word(list_of_words)
-    word_makeup = set(new_word) #tell us the letters that make up the word
-    alphabet = set(string.ascii_uppercase) #letters of alphabet in CAPS
-    guessed_letters = set() #this tells us what the user has guessed
-    lives_allowed = 8 
+    word_makeup = set(new_word)  # Tell us the letters that make up the word
+    alphabet = set(string.ascii_uppercase)  # Letters of alphabet in CAPS
+    guessed_letters = set()  # This tells us what the user has guessed
+    lives_allowed = 8
 
     """
     Grabbing the users input for a letter guess and seeing if it is a letter
     they have guessed already or not
-    """    
+    """
     while len(word_makeup) > 0 and lives_allowed > 0:
         letter_guess = input("Guess a letter: ").upper()
 
@@ -131,7 +136,7 @@ def guess_word():
             if letter_guess in word_makeup:
                 word_makeup.remove(letter_guess)
                 print(f"You guessed correctly {green_tick}")
-        
+
             else:
                 lives_allowed = lives_allowed - 1
                 print(
@@ -141,17 +146,17 @@ def guess_word():
 
         elif letter_guess in guessed_letters:
             print(Fore.RED + f"{cross_emoji} Whoops! You cannot guess the same"
-                f" letter twice. Please try again." + Style.RESET_ALL)
+                  f" letter twice. Please try again." + Style.RESET_ALL)
 
         else:
             print(Fore.RED + f"{prohibited} INVALID character, please try"
-                f" again." + Style.RESET_ALL)
+                  f" again." + Style.RESET_ALL)
 
-        #telling the user what letters they have guessed
+        # Telling the user what letters they have guessed
         print("You have have used letters: ", ' '.join(guessed_letters))
         print("")
 
-        #what the current word is being guessed
+        # What the current word is being guessed
         word_list = [
             letter if letter in guessed_letters else '-' for letter in new_word
             ]
@@ -167,10 +172,11 @@ def guess_word():
         print(f"Yay! You did it {face_with_hearts}\n")
     return word_makeup
 
+
 def restart_game():
     """
-    This function holds all the functions used to play the game after the 
-    display rules function, when the user decides they want to play the game 
+    This function holds all the functions used to play the game after the
+    display rules function, when the user decides they want to play the game
     again.
     """
     while True:
@@ -178,12 +184,12 @@ def restart_game():
             f"Would you like to start the game again? {color_green}Y"
             f"{styling_end}/{color_red}N{styling_end}: "
             ).upper()
-        
+
         if play_again == "Y":
             print(
                 f"YES! I like you {crazy_face}  Let's go again!\n")
             restart_functions()
-        elif play_again == "N": 
+        elif play_again == "N":
             while True:
                 play_again_2 = input(
                     f"Are you sure?: {color_green}Y{styling_end}/{color_red}N"
@@ -210,6 +216,7 @@ def restart_game():
                 f" Y or N.\n"
                 )
 
+
 def restart_functions():
     """
     This function holds all the functions needed to restart the game in a
@@ -227,5 +234,6 @@ def main():
     get_correct_word(list_of_words)
     guess_word()
     restart_game()
+
 
 main()
