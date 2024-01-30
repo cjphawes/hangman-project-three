@@ -60,8 +60,8 @@ def enter_game():
                     break
                 else:
                     print(
-                        f"{confused_emoji} I didn't ask for that did I?, please"
-                        f" enter Y or N.\n"
+                        f"{confused_emoji} I didn't ask for that did I?,"
+                        f" please enter Y or N.\n"
                         )
         else:
             print(
@@ -102,7 +102,7 @@ def get_correct_word(list_of_words):
     """
     new_word = random.choice(list_of_words)
 
-    while "-" in new_word or " " in new_word:
+    while "-" in new_word or " " or len(new_word) < 4 in new_word:
         new_word = random.choice(list_of_words)
         
     return new_word.upper()
@@ -152,7 +152,9 @@ def guess_word():
         print("")
 
         #what the current word is being guessed
-        word_list = [letter if letter in guessed_letters else '-' for letter in new_word]
+        word_list = [
+            letter if letter in guessed_letters else '-' for letter in new_word
+            ]
         print("Your word is: ", ' '.join(word_list))
         print("")
 
@@ -198,8 +200,8 @@ def restart_game():
                     break
                 else:
                     print(
-                        f"{confused_emoji} I didn't ask for that did I?, please"
-                        f" enter Y or N.\n"
+                        f"{confused_emoji} I didn't ask for that did I?,"
+                        f" please enter Y or N.\n"
                         )
             restart_game()
         else:
