@@ -1,3 +1,5 @@
 {
-  "cSpell.words": ["emojize", "winky"]
+  "cSpell.words": ["emojize", "winky"],
+  "editor.wordWrapColumn": 80,
+  "editor.rulers": [79]
 }
