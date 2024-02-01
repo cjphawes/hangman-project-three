@@ -1,9 +1,9 @@
-# Built-in imports
+"""Built-in imports"""
 import string
 import random
-# 3rd party imports
+"""3rd party imports"""
 from colorama import Fore, Style
-# Local imports
+"""Local imports"""
 from number_styling import *
 from emoji_dict import *
 from rules import rules
@@ -105,7 +105,7 @@ def get_correct_word(list_of_words):
     """
     new_word = random.choice(list_of_words)
 
-    while "-" in new_word or " " or len(new_word) < 4:
+    while any(char in new_word for char in ("-", " ")) or len(new_word) < 4:
         new_word = random.choice(list_of_words)
 
     return new_word.upper()
