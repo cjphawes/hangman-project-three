@@ -54,9 +54,27 @@ Link to the game: [https://hangman-havoc-5a5a826a9d8e.herokuapp.com/](https://ha
 
 #### After Entering The Game
 
-![After entering the game]()
+![After entering the game](/documentation-imgs/game_rules.png)
 
-- The user
+- The user will be met with the rules of the game explaining how it works and what to look out for.
+- The user is asked for their username.
+
+#### Upon entering a username
+
+![After entering a username](/documentation-imgs/)
+
+- The user is prompted to make a guess for the first word they are guessing.
+- The first guess is always a mystery to the user so they do not know how many letters they need to guess until after the first guess.
+
+#### After a correct guess
+
+![]()
+
+- The user is given:
+  - A small message to confirm they guessed correctly.
+  - What letters they have guessed altogether.
+  - What letters they have guessed in the word if any at all.
+  -
 
 ## Reminders
 
