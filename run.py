@@ -1,7 +1,6 @@
 # Built-in imports
 import string
 import random
-import os
 # 3rd party imports
 from colorama import Fore, Style
 # Local imports
@@ -34,7 +33,7 @@ def start_game():
 
 
 def enter_game():
-    # Asks user if they are ready to start the game, with user validation
+    """Asks user if they are ready to start the game, with user validation"""
     while True:
         user_response = input(
             f"Would you like to start the game? {color_green}Y{styling_end}/"
@@ -74,7 +73,7 @@ def enter_game():
 
 
 def display_rules():
-    # Displays the rules for the game
+    """Displays the rules for the game"""
     print(rules)
 
 
@@ -93,9 +92,10 @@ def input_username():
                 )
             break
         else:
-            print(Fore.RED + f"{prohibited} {username} is an INVALID username,"
-                  f" please use one without numbers, special characters or"
-                  f" spaces.\n" + Style.RESET_ALL)
+            print(
+                Fore.RED + f"{prohibited} {username} is an INVALID username,"
+                f" please use one without numbers, special characters or"
+                f" spaces.\n" + Style.RESET_ALL)
     return username
 
 
@@ -106,7 +106,7 @@ def get_correct_word(list_of_words):
     """
     new_word = random.choice(list_of_words)
 
-    while "-" in new_word or " " or len(new_word) < 4 in new_word:
+    while "-" in new_word or " " or len(new_word) < 4:
         new_word = random.choice(list_of_words)
 
     return new_word.upper()
@@ -145,12 +145,14 @@ def guess_word():
                     )
 
         elif letter_guess in guessed_letters:
-            print(Fore.RED + f"{cross_emoji} Whoops! You cannot guess the same"
-                  f" letter twice. Please try again." + Style.RESET_ALL)
+            print(
+                Fore.RED + f"{cross_emoji} Whoops! You cannot guess the same"
+                f" letter twice. Please try again." + Style.RESET_ALL)
 
         else:
-            print(Fore.RED + f"{prohibited} INVALID character, please try"
-                  f" again." + Style.RESET_ALL)
+            print(
+                Fore.RED + f"{prohibited} INVALID character, please try"
+                f" again." + Style.RESET_ALL)
 
         # Telling the user what letters they have guessed
         print("You have have used letters: ", ' '.join(guessed_letters))
@@ -227,6 +229,7 @@ def restart_functions():
 
 
 def main():
+    """Holds all functions to run the game"""
     start_game()
     enter_game()
     display_rules()
