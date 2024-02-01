@@ -6,6 +6,8 @@
 
 Welcome to Hangman Havoc, a terminal based Python game. This game is my attempt at providing humorous version of an iconic game for pleasure.
 
+It is aimed at all ages, for anyone who wants to have some fun, laugh and try to guess words correctly!
+
 Try to not lose all your lives! [Hangman Havoc](https://hangman-havoc-5a5a826a9d8e.herokuapp.com/)
 
 ![hangman havoc on a variety of screen widths](/documentation-imgs/game_on_various_screen_sizes.png)
@@ -17,7 +19,7 @@ Am I Responsive [Webpage](https://ui.dev/amiresponsive?url=https://hangman-havoc
 ## How to play
 
 1. Click this [link](https://hangman-havoc-5a5a826a9d8e.herokuapp.com/) or copy and paste: `https://hangman-havoc-5a5a826a9d8e.herokuapp.com/` into your browser's address bar.
-2. If the game loads, follow the instructions, if it doesn't load, click "RUN PROGRAM".
+2. If the game loads, follow the instructions, if it doesn't load, click "**RUN PROGRAM**".
 3. Understand the rules of the game before continuing.
 4. Enter a username and start guessing!
 5. Once you are tired of playing you can exit the game by telling the game you don't want to play again.
@@ -48,11 +50,11 @@ Link to the game: [https://hangman-havoc-5a5a826a9d8e.herokuapp.com/](https://ha
 
 ![Once program has loaded](/documentation-imgs/game_loaded.png)
 
-- The user will see the game title
-- Provides introduction text to explain how the game works
+- The user will see the game title.
+- Provides introduction text to explain how the game works.
 - Asks the user if they want to start game.
 
-#### After Entering The Game
+#### After entering the game
 
 ![After entering the game](/documentation-imgs/game_rules.png)
 
@@ -61,20 +63,102 @@ Link to the game: [https://hangman-havoc-5a5a826a9d8e.herokuapp.com/](https://ha
 
 #### Upon entering a username
 
-![After entering a username](/documentation-imgs/)
+![After entering a username](/documentation-imgs/entered_a_username.png)
 
 - The user is prompted to make a guess for the first word they are guessing.
 - The first guess is always a mystery to the user so they do not know how many letters they need to guess until after the first guess.
 
 #### After a correct guess
 
-![]()
+![After correctly guessing](/documentation-imgs/correct_guess.png)
 
 - The user is given:
   - A small message to confirm they guessed correctly.
-  - What letters they have guessed altogether.
-  - What letters they have guessed in the word if any at all.
-  -
+  - What letters they have used already.
+  - The word they need to guess with the letters they have correctly guessed shown and the others blank.
+
+#### After an incorrect guess
+
+![After incorrectly guessing](/documentation-imgs/incorrect_guess.png)
+
+- The user is given:
+  - A small message to confirm they guessed incorrectly.
+  - What letters they have used already.
+  - The word they need to guess with the letters they have correctly guessed shown and the others blank.
+
+#### If the user wins
+
+![User wins](/documentation-imgs/user_wins.png)
+
+- The user will be shown the full word they guessed correctly.
+- A small message congratulating them on winning.
+- Prompted as to whether they want restart the game or not.
+
+#### If the user loses
+
+![User lost](/documentation-imgs/user_lost.png)
+
+- The user is given a small message confirming that they lost.
+- They are given the word that they were trying to guess.
+- Prompted as to whether they want to restart the game or not.
+
+#### User restarts game
+
+![User restarts the game](/documentation-imgs/restarts_game.png)
+
+- Once the user inputs a "**Y**", they will receive a small funny message.
+- The game will restart from the point of making the first mystery letter guess.
+
+#### User wants to end the game
+
+- The user is met with a confirmation question at the start of the game and the end of the game, re-asking if they are sure they want to stop playing.
+
+##### If yes (start of game)
+
+![User wants to end the game with a yes](/documentation-imgs/start_of_game_confirmation_yes.png)
+
+- The user will be given a sad message and then thanked for playing the game.
+
+##### If yes (end of game)
+
+![User wants to end the game with a yes](/documentation-imgs/end_of_game_confirmation_yes.png)
+
+- The user is given a sad, yet funny message and thanks them for playing.
+
+##### If no (start of game)
+
+![User wants to start the game with a yes](/documentation-imgs/start_of_game_confirmation_no.png)
+
+- The user is given a motivating and funny message encouraging them to get the game started.
+
+##### If no (end of game)
+
+![User wants to end the game with a no](/documentation-imgs/end_of_game_confirmation_no.png)
+
+- The user is given an excited message.
+- Prompts the user once again if they would like to restart the game just in case it was a typo.
+
+#### Invalid inputs
+
+- There is a variety of user validation involved with each question and input asked for.
+
+##### After an invalid guess
+
+![After an invalid guess](/documentation-imgs/invalid_guess.png)
+
+- The user is given:
+  - A small message confirming two types of message:
+    - An invalid character.
+    - Using the same letter twice.
+  - What letters they have already used.
+  - The word they need to guess with the letters they have correctly guessed shown and the others blank.
+
+##### After an invalid input
+
+![After an invalid input](/documentation-imgs/invalid_input.png)
+
+- The user is shown a witty comment and told what they need to be inputting.
+- Prompted to answer the question again correctly.
 
 ## Reminders
 
