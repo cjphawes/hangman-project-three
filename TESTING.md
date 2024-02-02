@@ -1,4 +1,4 @@
-Click [README.md](#README.md) to return back.
+Click [README.md](/README.md) to return back.
 
 ## Testing
 
