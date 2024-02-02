@@ -160,7 +160,49 @@ Link to the game: [https://hangman-havoc-5a5a826a9d8e.herokuapp.com/](https://ha
 - The user is shown a witty comment and told what they need to be inputting.
 - Prompted to answer the question again correctly.
 
+---
+
+## Logic process
+
+![Flowchart of game logic](/documentation-imgs/flowchart_of_game_logic.png)
+
+- This flowchart represents the logical flow of the game.
+
+---
+
+## Technologies used
+
+- Python [3.9.18](https://www.python.org/downloads/release/python-3918/)
+
+#### Modules/Packages used
+
+##### Standard library imports
+
+- [Random](https://docs.python.org/3/library/random.html) was used to randomize the selection of a word for the user to guess.
+- [String](https://docs.python.org/3/library/string.html) was used to make all letters guessed shown as capital letters.
+
+##### 3rd Party imports
+
+- [Colorama](https://pypi.org/project/colorama/) was used to add colors and styles to the text.
+- [Emoji](https://pypi.org/project/emoji/) was used for generating emojis to provide the humorous and life elements.
+
+##### Local imports
+
+- []()
+
+##### Other tools
+
+- [VSCode]() was used as the main IDE and tool to write and edit code.
+- [Git](https://git-scm.com/) was used for the version control of the program.
+- [Github](https://github.com/) was used to upload my code for collaboration purposes.
+- [Heroku](https://dashboard.heroku.com/) was used for the deployment of the program.
+- [Lucidchart](https://www.lucidchart.com/pages/) was used for the creation of my program logic flowchart for the README file.
+- [ImageResizer](https://imageresizer.com/) was used to change from documentation images from png to webp.
+
+---
+
+## Bugs
+
 ## Reminders
 
-- Your code must be placed in the `run.py` file
 - Your dependencies must be placed in the `requirements.txt` file
