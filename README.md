@@ -193,7 +193,7 @@ Link to the game: [https://hangman-havoc-5a5a826a9d8e.herokuapp.com/](https://ha
 
 ##### Other tools
 
-- [VSCode]() was used as the main IDE and tool to write and edit code.
+- [VSCode](https://code.visualstudio.com/) was used as the main IDE and tool to write and edit code.
 - [Git](https://git-scm.com/) was used for the version control of the program.
 - [Github](https://github.com/) was used to upload my code for collaboration purposes.
 - [Heroku](https://dashboard.heroku.com/) was used for the deployment of the program.
@@ -206,32 +206,46 @@ Link to the game: [https://hangman-havoc-5a5a826a9d8e.herokuapp.com/](https://ha
 
 #### Solved bugs
 
-1. The word generated for the user to guess was including 3 letter words when I only want 4 letter or more words to guess.
+- **Issue 1**: The word generated for the user to guess was including 3 letter words when I only want 4 letter or more words to guess.
 
-   - _Solution_: I added `or len(new_word) < 4`to my while loop for iterating through the list of words variable.
+  - _Solution_: I added `or len(new_word) < 4`to my while loop for iterating through the list of words variable.
 
-     ```python
-     while any(char in new_word for char in ("-", " ")) or len(new_word) < 4:
-        new_word = random.choice(list_of_words)
-     return new_word.upper()
-     ```
+    ```python
+    while any(char in new_word for char in ("-", " ")) or len(new_word) < 4:
+       new_word = random.choice(list_of_words)
+    return new_word.upper()
+    ```
 
-2. My secondary confirmation questions were not going to the correct function once chosen an input, causing an infinite loop.
+- **Issue 2**: My secondary confirmation questions were not going to the correct function once chosen an input, causing an infinite loop.
 
-   - _Solution_: To get out of the loop i added `break` on the inner loops to break out back to the outer loop.
+  - _Solution_: To get out of the loop i added `break` on the inner loops to break out back to the outer loop.
 
-3. When entering a username, if you added a space before you typed your username, it would not capitalize the first letter as designed.
-   - _Solution_: A quick fix was to simply swap around my `strip()` and `capitalize()` methods so it would always strip away the spaces first before then capitalizing the username's first letter.
+- **Issue 3**: When entering a username, if you added a space before you typed your username, it would not capitalize the first letter as designed.
+  - _Solution_: A quick fix was to simply swap around my `strip()` and `capitalize()` methods so it would always strip away the spaces first before then capitalizing the username's first letter.
 
 #### Unsolved Bugs
 
 - None.
 
----
+#### Mistakes
+
+There were four mistakes made while committing to Github.
+
+- **ae9195d** - "feat:adjusted formatting to conform to PEP8 standards"
+  _**Supposed to be**_: "feat:adjust formatting to conform to PEP8 standards"
+
+- **336d117** - "maint: add dependencies go my requirements.txt file"
+  _**Supposed to be**_: "maint: add dependencies to my requirements.txt file"
+
+- **1352315** - "remove parameters from functions and try/except statement"
+  _**Supposed to be**_: "feat:remove parameters from functions and try/except statement"
+
+- **ee40f58** - "add multiple 'g' just to see if app has updated"
+  _**Supposed to be**_: "feat:add multiple 'g' just to see if app has updated"
 
 ## Testing
 
-- Please refer to the [TESTING.md](#TESTING.md)
+- Please refer to the [TESTING.md](/TESTING.md)
 
 ---
 
