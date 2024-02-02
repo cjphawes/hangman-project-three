@@ -181,14 +181,10 @@ Link to the game: [https://hangman-havoc-5a5a826a9d8e.herokuapp.com/](https://ha
 - [Random](https://docs.python.org/3/library/random.html) was used to randomize the selection of a word for the user to guess.
 - [String](https://docs.python.org/3/library/string.html) was used to make all letters guessed shown as capital letters.
 
-##### 3rd Party imports
+##### 3rd party imports
 
 - [Colorama](https://pypi.org/project/colorama/) was used to add colors and styles to the text.
 - [Emoji](https://pypi.org/project/emoji/) was used for generating emojis to provide the humorous and life elements.
-
-##### Local imports
-
-- []()
 
 ##### Other tools
 
@@ -197,11 +193,40 @@ Link to the game: [https://hangman-havoc-5a5a826a9d8e.herokuapp.com/](https://ha
 - [Github](https://github.com/) was used to upload my code for collaboration purposes.
 - [Heroku](https://dashboard.heroku.com/) was used for the deployment of the program.
 - [Lucidchart](https://www.lucidchart.com/pages/) was used for the creation of my program logic flowchart for the README file.
-- [ImageResizer](https://imageresizer.com/) was used to change from documentation images from png to webp.
+- [Imageresizer](https://imageresizer.com/) was used to change from documentation images from png to webp.
 
 ---
 
 ## Bugs
+
+#### Solved bugs
+
+1. The word generated for the user to guess was including 3 letter words when I only want 4 letter or more words to guess.
+
+   - _Solution_: I added `or len(new_word) < 4`to my while loop for iterating through the list of words variable.
+
+     ```python
+     while any(char in new_word for char in ("-", " ")) or len(new_word) < 4:
+        new_word = random.choice(list_of_words)
+     return new_word.upper()
+     ```
+
+2. My secondary confirmation questions were not going to the correct function once chosen an input, causing an infinite loop.
+
+   - _Solution_: To get out of the loop i added `break` on the inner loops to break out back to the outer loop.
+
+3. When entering a username, if you added a space before you typed your username, it would not capitalize the first letter as designed.
+   - _Solution_: A quick fix was to simply swap around my `strip()` and `capitalize()` methods so it would always strip away the spaces first before then capitalizing the username's first letter.
+
+#### Unsolved Bugs
+
+- None.
+
+---
+
+## Testing
+
+- Please refer to the [TESTING.md](#TESTING.md)
 
 ## Reminders
 
