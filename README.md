@@ -160,6 +160,10 @@ Link to the game: [https://hangman-havoc-5a5a826a9d8e.herokuapp.com/](https://ha
 - The user is shown a witty comment and told what they need to be inputting.
 - Prompted to answer the question again correctly.
 
+## Future features to implement
+
+- A simple menu rather than an input method of choosing what to select, to make it more easy to navigate.
+
 ---
 
 ## Logic process
@@ -227,6 +231,18 @@ Link to the game: [https://hangman-havoc-5a5a826a9d8e.herokuapp.com/](https://ha
 ## Testing
 
 - Please refer to the [TESTING.md](#TESTING.md)
+
+---
+
+## Deployment
+
+- The program was deployed using [Heroku](https://dashboard.heroku.com/)
+- ***
+
+## Credits
+
+- I used [Chat GPT](https://chat.openai.com/) to make all the words in my `rules.py` variable to follow PEP8 standards with the character line limit.
+-
 
 ## Reminders
 
