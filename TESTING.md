@@ -29,3 +29,7 @@ No errors were found in all .py files.
 - emoji_dict.py
 
 ![CI Linter PEP8 test for emoji_dict.py](/documentation-imgs/ci_linter_validation_emoji_dict.py.png)
+
+## Compatibility Issues
+
+- The heart emoji is a different size and color depending on the browser the user is using.
