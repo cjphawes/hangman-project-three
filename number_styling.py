@@ -1,4 +1,4 @@
-#variables used for all styling of numbers
+"""Variables used for all styling of numbers"""
 underline = "\033[4m"
 color_white = "\033[1;37m"
 color_green = "\033[1;32m"
