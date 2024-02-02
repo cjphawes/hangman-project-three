@@ -1,5 +1,9 @@
+"""
+This file is for holding all of the available words that could possibly
+generate for the user to guess
+"""
 list_of_words = [
-    "aback", "abaft", "abandoned", "abashed", "aberrant", 
+    "aback", "abaft", "abandoned", "abashed", "aberrant",
     "abhorrent", "abiding", "abject", "ablaze", "able",
     "abnormal", "aboard", "aboriginal", "abortive", "abounding",
     "abrasive", "abrupt", "absent", "absorbed", "absorbing",
