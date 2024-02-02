@@ -1,6 +1,7 @@
+"""File for holding all of the emoji's used in the run.py file"""
 import emoji
 
-#variables of all emoji's used in the hangman game
+# Variables of all emoji's used in the hangman game
 waving_hand = emoji.emojize("\U0001F44B")
 confused_emoji = emoji.emojize("\U0001F928")
 heart_emoji = emoji.emojize("\u2764\ufe0f")
