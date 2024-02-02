@@ -1,9 +1,10 @@
-"""Built-in imports"""
+"""
+All imports starting with Built-in, then 3rd party and then local 
+imports
+"""
 import string
 import random
-"""3rd party imports"""
 from colorama import Fore, Style
-"""Local imports"""
 from number_styling import *
 from emoji_dict import *
 from rules import rules
