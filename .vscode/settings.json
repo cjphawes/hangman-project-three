@@ -1,5 +1,12 @@
 {
-  "cSpell.words": ["emojize", "winky"],
+  "cSpell.words": [
+    "Colorama",
+    "emojize",
+    "Imageresizer",
+    "Lucidchart",
+    "webp",
+    "winky"
+  ],
   "editor.wordWrapColumn": 80,
   "editor.rulers": [79]
 }
