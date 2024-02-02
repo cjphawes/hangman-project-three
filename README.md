@@ -163,6 +163,7 @@ Link to the game: [https://hangman-havoc-5a5a826a9d8e.herokuapp.com/](https://ha
 ## Future features to implement
 
 - A simple menu rather than an input method of choosing what to select, to make it more easy to navigate.
+- Allow users to have a multiple space username.
 
 ---
 
