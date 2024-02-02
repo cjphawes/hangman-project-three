@@ -1,5 +1,5 @@
 """
-All imports starting with Built-in, then 3rd party and then local 
+All imports starting with Built-in, then 3rd party and then local
 imports
 """
 import string
