@@ -4,6 +4,7 @@ imports
 """
 import string
 import random
+import sys
 from colorama import Fore, Style
 from number_styling import *
 from emoji_dict import *
@@ -55,7 +56,7 @@ def enter_game():
                         f"\nBut we didn't even get to play together {sad_face}"
                         f"\nThank you for playing!{waving_hand}"
                         )
-                    exit()
+                    sys.exit()
                 elif user_response_2 == "N":
                     print(f"\nI DIDN'T THINK SO {crazy_face}  LET'S GO!")
                     break
@@ -168,7 +169,7 @@ def guess_word():
     if lives_allowed == 0:
         print(
             f"You {color_white}LOST!{styling_end}{shocked_face}\nThe word was"
-            + f" {color_white}{underline}{new_word}{styling_end}\n"
+            f" {color_white}{underline}{new_word}{styling_end}\n"
             )
     else:
         print(f"Yay! You did it {face_with_hearts}\n")
@@ -202,7 +203,7 @@ def restart_game():
                     print(
                         f"\nBut we were having so much fun {sad_face}\n"
                         f"Thank you for playing!{waving_hand}")
-                    exit()
+                    sys.exit()
                 elif play_again_2 == "N":
                     print(f"\nOH REALLY {crazy_face}")
                     break
