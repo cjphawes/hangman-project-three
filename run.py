@@ -24,8 +24,8 @@ def start_game():
     print(lines)
     print(
         f"\n\nThe exciting word-guessing game where your vocabulary skills"
-        f" are put to the\n test! In this game, you have a limited number"
-        f" of {heart_emoji}  lives to guess the hidden word correctly. Can"
+        f" are put to the\ntest! In this game, you have a limited number"
+        f" of {heart_emoji}  lives to guess the hidden\nword correctly. Can"
         f" {color_white}YOU{styling_end} figure out the word and avoid running"
         f" out of lives? {color_white}Challenge{styling_end} yourself and see"
         f" how many words you can solve in a row! Dive in and start"
