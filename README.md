@@ -185,6 +185,7 @@ Link to the game: [https://hangman-havoc-5a5a826a9d8e.herokuapp.com/](https://ha
 
 - [Random](https://docs.python.org/3/library/random.html) was used to randomize the selection of a word for the user to guess.
 - [String](https://docs.python.org/3/library/string.html) was used to make all letters guessed shown as capital letters.
+- [Sys](https://docs.python.org/3/library/sys.html) was used for the exiting function of the program.
 
 ##### 3rd party imports
 
@@ -256,7 +257,11 @@ There were four mistakes made while committing to Github.
 
 ## Credits
 
-- I used [Chat GPT](https://chat.openai.com/) to make all the words in my `rules.py` variable to follow PEP8 standards with the character line limit.
+- I used Matthew Hsu [Github repo](https://github.com/mahsu/IndexingExercise/blob/master/5000-words.txt) for gathering the words to use.
+- [Chat GPT](https://chat.openai.com/) reformatted all the words in my `rules.py` file to follow PEP8 standards with the character line limit.
+- [iEmoji.com](https://www.iemoji.com/view/emoji/40/symbols/) is where I found the code for each emoji used.
+- The title of Hangman Havoc used [ASCII ](https://ascii.co.uk/text) text.
+- I used the [ANSI Escape Sequence](https://blog.finxter.com/how-to-print-bold-text-in-python/) method for making words/numbers bold and this showed me how to use the [Colorama](https://blog.finxter.com/how-to-print-bold-text-in-python/) package for the coloring of text.
 -
 
 ## Reminders
