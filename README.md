@@ -205,7 +205,9 @@ The user is given:
 
 ---
 
-## Bugs
+## Testing
+
+Please refer to the [TESTING.md](/TESTING.md) for all test- related documentation.
 
 #### Solved bugs
 
@@ -245,12 +247,6 @@ There were four mistakes made while committing to Github.
 
 - **ee40f58** - "add multiple 'g' just to see if app has updated"
   _**Supposed to be**_: "feat:add multiple 'g' just to see if app has updated"
-
----
-
-## Testing
-
-Please refer to the [TESTING.md](/TESTING.md)
 
 ---
 
