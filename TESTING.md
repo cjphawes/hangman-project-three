@@ -14,30 +14,30 @@ No errors were found in all .py files.
 
 - run.py
 
-![CI Linter PEP8 test for run.py](/documentation-imgs/ci_linter_validation_run.py.webp)
+![CI Linter PEP8 test for run.py](/documentation/doc-imgs/ci_linter_validation_run.py.webp)
 
 - rules.py
 
-![CI Linter PEP8 test for rules.py](/documentation-imgs/ci_linter_validation_rules.py.webp)
+![CI Linter PEP8 test for rules.py](/documentation/doc-imgs/ci_linter_validation_rules.py.webp)
 
 - words.py
 
-![CI Linter PEP8 test for words.py](/documentation-imgs/ci_linter_validation_words.py.webp)
+![CI Linter PEP8 test for words.py](/documentation/doc-imgs/ci_linter_validation_words.py.webp)
 
 - number_styling.py
 
-![CI Linter PEP8 test for number_styling.py](/documentation-imgs/ci_linter_validation_number_styling.py.webp)
+![CI Linter PEP8 test for number_styling.py](/documentation/doc-imgs/ci_linter_validation_number_styling.py.webp)
 
 - emoji_dict.py
 
-![CI Linter PEP8 test for emoji_dict.py](/documentation-imgs/ci_linter_validation_emoji_dict.py.webp)
+![CI Linter PEP8 test for emoji_dict.py](/documentation/doc-imgs/ci_linter_validation_emoji_dict.py.webp)
 
 #### Compatibility testing
 
 Testing was completed on Google Chrome, Microsoft Edge, Firefox web browsers.
 
 - Google Chrome
-  ![]()
+
 - Microsoft Edge
 
 - Firefox
