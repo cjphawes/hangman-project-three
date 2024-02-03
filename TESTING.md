@@ -34,7 +34,7 @@ No errors were found in all .py files.
 
 #### Compatibility testing
 
-Testing was completed on Google Chrome, Microsoft Edge, Firefox web browsers.
+Testing was completed on Google Chrome, Microsoft Edge, Firefox web browsers. As you go through the videos you will also see all of the user validation works correctly and the inputs the user makes create the correct response as per the code.
 
 - Google Chrome
 
