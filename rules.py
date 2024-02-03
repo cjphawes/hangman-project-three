@@ -4,7 +4,7 @@ from number_styling import *
 rules = (
     f"\n{underline}Here are the rules{styling_end} {writing}\n\n"
     f"{color_white}1.{styling_end} I will give you a mystery word, it is"
-    f" your job to guess the letters that make\n up that word.\n{color_white}"
+    f" your job to guess the letters that make\n  up that word.\n{color_white}"
     f"2.{styling_end} You have 8 {heart_emoji_multiplied}  lives available,"
     f" every time you get a letter incorrect, you will lose a {heart_emoji}"
     f"\n{color_white}3.{styling_end} Guess a letter and I will tell you if"
