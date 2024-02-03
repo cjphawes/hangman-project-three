@@ -20,9 +20,9 @@ Am I Responsive [Webpage](https://ui.dev/amiresponsive?url=https://hangman-havoc
 
 1. Click this [link](https://hangman-havoc-5a5a826a9d8e.herokuapp.com/) or copy and paste: `https://hangman-havoc-5a5a826a9d8e.herokuapp.com/` into your browser's address bar.
 2. If the game loads, follow the instructions, if it doesn't load, click "**RUN PROGRAM**".
-3. Understand the rules of the game before continuing.
+3. Understand the rules, after entering the game.
 4. Enter a username and start guessing!
-5. Once you are tired of playing you can exit the game by telling the game you don't want to play again.
+5. Once you are tired of playing you can exit the game by inputting "**N**", when asked if you want to play the game.
 
 Link to the game: [https://hangman-havoc-5a5a826a9d8e.herokuapp.com/](https://hangman-havoc-5a5a826a9d8e.herokuapp.com/)
 
@@ -72,10 +72,11 @@ Link to the game: [https://hangman-havoc-5a5a826a9d8e.herokuapp.com/](https://ha
 
 ![After correctly guessing](/documentation-imgs/correct_guess.webp)
 
-- The user is given:
-  - A small message to confirm they guessed correctly.
-  - What letters they have used already.
-  - The word they need to guess with the letters they have correctly guessed shown and the others blank.
+The user is given:
+
+- A small message to confirm they guessed correctly.
+- What letters they have used already.
+- The word they need to guess with the letters they have correctly guessed shown and the others blank.
 
 #### After an incorrect guess
 
@@ -111,25 +112,25 @@ Link to the game: [https://hangman-havoc-5a5a826a9d8e.herokuapp.com/](https://ha
 
 #### User wants to end the game
 
-- The user is met with a confirmation question at the start of the game and the end of the game, re-asking if they are sure they want to stop playing.
+The user is met with a confirmation question at the start of the game and the end of the game, re-asking if they are sure they want to stop playing.
 
 ##### If yes (start of game)
 
 ![User wants to end the game with a yes](/documentation-imgs/start_of_game_confirmation_yes.webp)
 
-- The user will be given a sad message and then thanked for playing the game.
+The user will be given a sad message and then thanked for playing the game.
 
 ##### If yes (end of game)
 
 ![User wants to end the game with a yes](/documentation-imgs/end_of_game_confirmation_yes.webp)
 
-- The user is given a sad, yet funny message and thanks them for playing.
+The user is given a sad, yet funny message and thanks them for playing.
 
 ##### If no (start of game)
 
 ![User wants to start the game with a yes](/documentation-imgs/start_of_game_confirmation_no.webp)
 
-- The user is given a motivating and funny message encouraging them to get the game started.
+The user is given a motivating and funny message encouraging them to get the game started.
 
 ##### If no (end of game)
 
@@ -140,18 +141,19 @@ Link to the game: [https://hangman-havoc-5a5a826a9d8e.herokuapp.com/](https://ha
 
 #### Invalid inputs
 
-- There is a variety of user validation involved with each question and input asked for.
+There is a variety of user validation involved with each question and input asked for.
 
 ##### After an invalid guess
 
 ![After an invalid guess](/documentation-imgs/invalid_guess.webp)
 
-- The user is given:
-  - A small message confirming two types of message:
-    - An invalid character.
-    - Using the same letter twice.
-  - What letters they have already used.
-  - The word they need to guess with the letters they have correctly guessed shown and the others blank.
+The user is given:
+
+- A small message confirming two types of message:
+  - An invalid character.
+  - Using the same letter twice.
+- What letters they have already used.
+- The word they need to guess with the letters they have correctly guessed shown and the others blank.
 
 ##### After an invalid input
 
@@ -226,7 +228,7 @@ Link to the game: [https://hangman-havoc-5a5a826a9d8e.herokuapp.com/](https://ha
 
 #### Unsolved Bugs
 
-- None.
+None.
 
 #### Mistakes
 
@@ -244,25 +246,28 @@ There were four mistakes made while committing to Github.
 - **ee40f58** - "add multiple 'g' just to see if app has updated"
   _**Supposed to be**_: "feat:add multiple 'g' just to see if app has updated"
 
+---
+
 ## Testing
 
-- Please refer to the [TESTING.md](/TESTING.md)
+Please refer to the [TESTING.md](/TESTING.md)
 
 ---
 
 ## Deployment
 
 - The program was deployed using [Heroku](https://dashboard.heroku.com/)
-- ***
+
+---
 
 ## Credits
 
 - I used Matthew Hsu [Github repo](https://github.com/mahsu/IndexingExercise/blob/master/5000-words.txt) for gathering the words to use.
 - [Chat GPT](https://chat.openai.com/) reformatted all the words in my `rules.py` file to follow PEP8 standards with the character line limit.
-- [iEmoji.com](https://www.iemoji.com/view/emoji/40/symbols/) is where I found the code for each emoji used.
+- [iEmoji.com](https://www.iemoji.com/view/emoji/40/symbols/) and [HTML Symbols](https://www.htmlsymbols.xyz/unicode/) is where I found the code for each emoji's used.
 - The title of Hangman Havoc used [ASCII ](https://ascii.co.uk/text) text.
-- I used the [ANSI Escape Sequence](https://blog.finxter.com/how-to-print-bold-text-in-python/) method for making words/numbers bold and this showed me how to use the [Colorama](https://blog.finxter.com/how-to-print-bold-text-in-python/) package for the coloring of text.
--
+- I used the [ANSI Escape Sequence](https://blog.finxter.com/how-to-print-bold-text-in-python/) method for making words/numbers bold.
+- I used the [Colorama](https://blog.finxter.com/how-to-print-bold-text-in-python/) package for the coloring of text, using [Replit](https://replit.com/talk/ask/How-do-you-change-text-colors-and-fonts-in-python/122041) for the different colors.
 
 ## Reminders
 
