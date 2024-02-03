@@ -262,12 +262,19 @@ Please refer to the [TESTING.md](/TESTING.md)
 
 ## Credits
 
+#### Content
+
 - I used Matthew Hsu [Github repo](https://github.com/mahsu/IndexingExercise/blob/master/5000-words.txt) for gathering the words to use.
 - [Chat GPT](https://chat.openai.com/) reformatted all the words in my `rules.py` file to follow PEP8 standards with the character line limit.
 - [iEmoji.com](https://www.iemoji.com/view/emoji/40/symbols/) and [HTML Symbols](https://www.htmlsymbols.xyz/unicode/) is where I found the code for each emoji's used.
 - The title of Hangman Havoc used [ASCII ](https://ascii.co.uk/text) text.
 - I used the [ANSI Escape Sequence](https://blog.finxter.com/how-to-print-bold-text-in-python/) method for making words/numbers bold.
 - I used the [Colorama](https://blog.finxter.com/how-to-print-bold-text-in-python/) package for the coloring of text, using [Replit](https://replit.com/talk/ask/How-do-you-change-text-colors-and-fonts-in-python/122041) for the different colors.
+
+#### Media
+
+- I used [Imageresizer](https://imageresizer.com/) for all the README.md & TESTING.md file images.
+- I used [Chrome Capture Extension](https://chromewebstore.google.com/detail/chrome-capture-gif-screen/ggaabchcecdbomdcnbahdfddfikjmphe) for the recording for the TESTING.md file.
 
 ## Reminders
 
