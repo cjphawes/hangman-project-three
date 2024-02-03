@@ -38,9 +38,21 @@ Testing was completed on Google Chrome, Microsoft Edge, Firefox web browsers. As
 
 - Google Chrome
 
+
+https://github.com/cjphawes/hangman-project-three/assets/105741584/2d1d9a60-9a93-43a4-8515-846fb222b82e
+
+
 - Microsoft Edge
 
+
+https://github.com/cjphawes/hangman-project-three/assets/105741584/5343ba47-4b2c-4ee1-9816-04f2748d45de
+
+
 - Firefox
+
+
+https://github.com/cjphawes/hangman-project-three/assets/105741584/9c5e492c-7688-4039-a7b3-eb7926f80c18
+
 
 #### Compatibility issues
 
