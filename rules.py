@@ -13,9 +13,9 @@ rules = (
     f" guess the word\n   correctly {green_tick}\n{color_white}6.{styling_end}"
     f" You will not know the length of the word until you make your first"
     f" guess!\n   Mysterious I know {winky_face}.  It could be from 4-9"
-    f" letters long! Who knows?{shrug_emoji}\n{color_white}5.{styling_end} {color_white}"
-    f"BE AWARE!{styling_end} There may be singular {color_white}OR"
-    f"{styling_end} plural words you may encounter.\n{color_white}6."
-    f"{styling_end} Finally, insert your username and have fun!"
+    f" letters long! Who knows? {shrug_emoji}\n{color_white}5.{styling_end}"
+    f" {color_white}BE AWARE!{styling_end} There may be singular"
+    f" {color_white}OR{styling_end} plural words you may encounter.\n"
+    f"{color_white}6.{styling_end} Finally, insert your username and have fun!"
     f" {crazy_face}\n"
     )
