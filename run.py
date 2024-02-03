@@ -54,7 +54,8 @@ def enter_game():
                 if user_response_2 == "Y":
                     print(
                         f"\nBut we didn't even get to play together {sad_face}"
-                        f"\nThank you for playing!{waving_hand}"
+                        f"\nThank you for playing!{waving_hand}  If you want"
+                        f" to play again simply click 'RUN PROGRAM'"
                         )
                     sys.exit()
                 elif user_response_2 == "N":
@@ -202,7 +203,9 @@ def restart_game():
                 if play_again_2 == "Y":
                     print(
                         f"\nBut we were having so much fun {sad_face}\n"
-                        f"Thank you for playing!{waving_hand}")
+                        f"Thank you for playing!{waving_hand}  If you want"
+                        f" to play again simply click 'RUN PROGRAM'"
+                        )
                     sys.exit()
                 elif play_again_2 == "N":
                     print(f"\nOH REALLY {crazy_face}")
