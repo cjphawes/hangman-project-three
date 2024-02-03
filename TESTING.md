@@ -1,5 +1,7 @@
 Click [README.md](/README.md) to return back.
 
+---
+
 ## Testing
 
 The program was tested constantly throughout the development process. I had multiple users try out my game to spot bugs or grammatical mistakes which they found and I corrected.
@@ -30,6 +32,17 @@ No errors were found in all .py files.
 
 ![CI Linter PEP8 test for emoji_dict.py](/documentation-imgs/ci_linter_validation_emoji_dict.py.webp)
 
-## Compatibility Issues
+#### Compatibility testing
+
+Testing was completed on Google Chrome, Microsoft Edge, Firefox web browsers.
+
+- Google Chrome
+  ![]()
+- Microsoft Edge
+
+- Firefox
+
+#### Compatibility issues
 
 - The heart emoji is a different size and color depending on the browser the user is using.
+- On the Firefox web browser the emoji's displayed half of the emoji.
