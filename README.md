@@ -1,4 +1,4 @@
-![Hangman Game Title](/documentation-imgs/hangman_title.webp)
+![Hangman Game Title](/documentation/doc-imgs/hangman_title.webp)
 
 ## Hangman Havoc
 
@@ -10,7 +10,7 @@ It is aimed at all ages, for anyone who wants to have some fun, laugh and try to
 
 Try to not lose all your lives! [Hangman Havoc](https://hangman-havoc-5a5a826a9d8e.herokuapp.com/)
 
-![hangman havoc on a variety of screen widths](/documentation-imgs/game_on_various_screen_sizes.webp)
+![hangman havoc on a variety of screen widths](/documentation/doc-imgs/game_on_various_screen_sizes.webp)
 
 Am I Responsive [Webpage](https://ui.dev/amiresponsive?url=https://hangman-havoc-5a5a826a9d8e.herokuapp.com/)
 
@@ -48,7 +48,7 @@ Link to the game: [https://hangman-havoc-5a5a826a9d8e.herokuapp.com/](https://ha
 
 #### Once the program has loaded
 
-![Once program has loaded](/documentation-imgs/game_loaded.webp)
+![Once program has loaded](/documentation/doc-imgs/game_loaded.webp)
 
 - The user will see the game title.
 - Provides introduction text to explain how the game works.
@@ -56,21 +56,21 @@ Link to the game: [https://hangman-havoc-5a5a826a9d8e.herokuapp.com/](https://ha
 
 #### After entering the game
 
-![After entering the game](/documentation-imgs/game_rules.webp)
+![After entering the game](/documentation/doc-imgs/game_rules.webp)
 
 - The user will be met with the rules of the game explaining how it works and what to look out for.
 - The user is asked for their username.
 
 #### Upon entering a username
 
-![After entering a username](/documentation-imgs/entered_a_username.webp)
+![After entering a username](/documentation/doc-imgs/entered_a_username.webp)
 
 - The user is prompted to make a guess for the first word they are guessing.
 - The first guess is always a mystery to the user so they do not know how many letters they need to guess until after the first guess.
 
 #### After a correct guess
 
-![After correctly guessing](/documentation-imgs/correct_guess.webp)
+![After correctly guessing](/documentation/doc-imgs/correct_guess.webp)
 
 The user is given:
 
@@ -80,7 +80,7 @@ The user is given:
 
 #### After an incorrect guess
 
-![After incorrectly guessing](/documentation-imgs/incorrect_guess.webp)
+![After incorrectly guessing](/documentation/doc-imgs/incorrect_guess.webp)
 
 - The user is given:
   - A small message to confirm they guessed incorrectly.
@@ -89,7 +89,7 @@ The user is given:
 
 #### If the user wins
 
-![User wins](/documentation-imgs/user_wins.webp)
+![User wins](/documentation/doc-imgs/user_wins.webp)
 
 - The user will be shown the full word they guessed correctly.
 - A small message congratulating them on winning.
@@ -97,7 +97,7 @@ The user is given:
 
 #### If the user loses
 
-![User lost](/documentation-imgs/user_lost.webp)
+![User lost](/documentation/doc-imgs/user_lost.webp)
 
 - The user is given a small message confirming that they lost.
 - They are given the word that they were trying to guess.
@@ -105,7 +105,7 @@ The user is given:
 
 #### User restarts game
 
-![User restarts the game](/documentation-imgs/restarts_game.webp)
+![User restarts the game](/documentation/doc-imgs/restarts_game.webp)
 
 - Once the user inputs a "**Y**", they will receive a small funny message.
 - The game will restart from the point of making the first mystery letter guess.
@@ -116,25 +116,25 @@ The user is met with a confirmation question at the start of the game and the en
 
 ##### If yes (start of game)
 
-![User wants to end the game with a yes](/documentation-imgs/start_of_game_confirmation_yes.webp)
+![User wants to end the game with a yes](/documentation/doc-imgs/start_of_game_confirmation_yes.webp)
 
 The user will be given a sad message and then thanked for playing the game.
 
 ##### If yes (end of game)
 
-![User wants to end the game with a yes](/documentation-imgs/end_of_game_confirmation_yes.webp)
+![User wants to end the game with a yes](/documentation/doc-imgs/end_of_game_confirmation_yes.webp)
 
 The user is given a sad, yet funny message and thanks them for playing.
 
 ##### If no (start of game)
 
-![User wants to start the game with a yes](/documentation-imgs/start_of_game_confirmation_no.webp)
+![User wants to start the game with a yes](/documentation/doc-imgs/start_of_game_confirmation_no.webp)
 
 The user is given a motivating and funny message encouraging them to get the game started.
 
 ##### If no (end of game)
 
-![User wants to end the game with a no](/documentation-imgs/end_of_game_confirmation_no.webp)
+![User wants to end the game with a no](/documentation/doc-imgs/end_of_game_confirmation_no.webp)
 
 - The user is given an excited message.
 - Prompts the user once again if they would like to restart the game just in case it was a typo.
@@ -145,7 +145,7 @@ There is a variety of user validation involved with each question and input aske
 
 ##### After an invalid guess
 
-![After an invalid guess](/documentation-imgs/invalid_guess.webp)
+![After an invalid guess](/documentation/doc-imgs/invalid_guess.webp)
 
 The user is given:
 
@@ -157,7 +157,7 @@ The user is given:
 
 ##### After an invalid input
 
-![After an invalid input](/documentation-imgs/invalid_input.webp)
+![After an invalid input](/documentation/doc-imgs/invalid_input.webp)
 
 - The user is shown a witty comment and told what they need to be inputting.
 - Prompted to answer the question again correctly.
@@ -171,7 +171,7 @@ The user is given:
 
 ## Logic process
 
-![Flowchart of game logic](/documentation-imgs/flowchart_of_game_logic.webp)
+![Flowchart of game logic](/documentation/doc-imgs/flowchart_of_game_logic.webp)
 
 - This flowchart represents the logical flow of the game.
 
@@ -274,7 +274,7 @@ Please refer to the [TESTING.md](/TESTING.md)
 #### Media
 
 - I used [Imageresizer](https://imageresizer.com/) for all the README.md & TESTING.md file images.
-- I used [Chrome Capture Extension](https://chromewebstore.google.com/detail/chrome-capture-gif-screen/ggaabchcecdbomdcnbahdfddfikjmphe) for the recording for the TESTING.md file.
+- I used [Screen Capture](https://www.screencapture.com/) for the recording for the TESTING.md file.
 
 ## Reminders
 
