@@ -28,7 +28,7 @@ def start_game():
         f" of {heart_emoji}  lives to guess the hidden\nword correctly. Can"
         f" {color_white}YOU{styling_end} figure out the word and avoid running"
         f" out of lives?\n{color_white}Challenge{styling_end} yourself and see"
-        f" how many words you can solve in a row! Dive in and start"
+        f" how many words you can solve in a row! Dive in and\nstart"
         f" guessing!\n\n"
         )
 
