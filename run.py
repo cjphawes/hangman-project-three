@@ -242,5 +242,5 @@ def main():
     guess_word()
     restart_game()
 
-
-main()
+if __name__ == "__main__":
+    main()
