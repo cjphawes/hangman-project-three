@@ -18,4 +18,4 @@ rules = (
     f" {color_white}OR{styling_end} plural words you may encounter.\n"
     f"{color_white}6.{styling_end} Finally, insert your username and have fun!"
     f" {crazy_face}\n"
-    )
+)
