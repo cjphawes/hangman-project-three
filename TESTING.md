@@ -6,7 +6,7 @@ Click [README.md](/README.md) to return back.
 
 The program was tested constantly throughout the development process. I had multiple users try out my game to spot bugs or grammatical mistakes which they found and I corrected.
 
-#### Validators
+## Validation
 
 I used the [Code Institute Python Linter](https://pep8ci.herokuapp.com/#) to ensure sure the source code throughout was [PEP8](https://legacy.python.org/dev/peps/pep-0008/) compliant.
 
@@ -32,17 +32,26 @@ No errors were found in all .py files.
 
 ![CI Linter PEP8 test for emoji_dict.py](/documentation/doc-imgs/ci_linter_validation_emoji_dict.py.webp)
 
-## Issues with validating code
+### Issues with validating code
 
 In Github, the final line of whitespace is removed in all my files, here is evidence at the bottom of my code displaying the last line for validation purposes.
 
 - run.py
-  ![run.py last line evidence]()
-  ![run.py last line evidence]()
-  ![run.py last line evidence]()
-  ![run.py last line evidence]()
-  ![run.py last line evidence]()
-  ![run.py last line evidence]()
+  ![run.py last line evidence](/documentation/doc-imgs/run.py_validation_evidence.webp)
+
+- rules.py
+  ![rules.py last line evidence](/documentation/doc-imgs/rules.py_validation_evidence.webp)
+
+- number_styling.py
+  ![number_styling.py last line evidence](/documentation/doc-imgs/number_styling.py_validation_evidence.webp)
+
+- emoji_dict.py
+  ![emoji_dict.py last line evidence](/documentation/doc-imgs/emoji_dict.py_validation_evidence.webp)
+
+- words.py
+  ![words.py last line evidence](/documentation/doc-imgs/words.py_validation_evidence.webp)
+
+---
 
 ## Manual Testing
 
@@ -62,6 +71,8 @@ In Github, the final line of whitespace is removed in all my files, here is evid
 | Input "**Y**" to play again                            | Inputs "**Y**"                                           | The user will be given a funny motivating message and immediately given the chance to guess a letter for the next word to guess.                                                                             | **Insert Video here** |
 | Input "**N**" to play again                            | Inputs "**N**"                                           | The user will be given a confirmation question to answer                                                                                                                                                     | **Insert Video here** |
 | Input "**Y**" or "**N**" to confirmation question      | Inputs "**Y**" or "**N**"                                | "**Y**" - A goodbye message is displayed. "**N**" - Redirects the user back to the play again question with a witty message added.                                                                           | **Insert Video here** |
+
+---
 
 #### Compatibility testing
 
