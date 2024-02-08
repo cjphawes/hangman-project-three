@@ -30,7 +30,7 @@ def start_game():
         f" out of lives?\n{color_white}Challenge{styling_end} yourself and see"
         f" how many words you can solve in a row! Dive in and\nstart"
         f" guessing!\n\n"
-        )
+    )
 
 
 def enter_game():
@@ -39,7 +39,7 @@ def enter_game():
         user_response = input(
             f"Would you like to start the game? {color_green}Y{styling_end}/"
             f"{color_red}N{styling_end}: "
-            ).upper()
+        ).upper()
 
         if user_response == "Y":
             print("Entering Game Now...\n")
@@ -49,14 +49,14 @@ def enter_game():
                 user_response_2 = input(
                     f"Are you a quitter?: {color_green}Y"
                     f"{styling_end}/{color_red}N{styling_end}: "
-                    ).upper()
+                ).upper()
 
                 if user_response_2 == "Y":
                     print(
                         f"\nBut we didn't even get to play together {sad_face}"
                         f"\nThank you for playing!{waving_hand}  If you want"
                         f" to play again simply click 'RUN PROGRAM'"
-                        )
+                    )
                     sys.exit()
                 elif user_response_2 == "N":
                     print(f"\nI DIDN'T THINK SO {crazy_face}  LET'S GO!")
@@ -65,12 +65,12 @@ def enter_game():
                     print(
                         f"{confused_emoji} I didn't ask for that did I?,"
                         f" please enter Y or N.\n"
-                        )
+                    )
         else:
             print(
                 f"{confused_emoji} I didn't ask for that did I?, please"
                 f" enter Y or N.\n"
-                )
+            )
     return user_response
 
 
@@ -91,7 +91,7 @@ def input_username():
             print(
                 f"\nAwesome username {username},"
                 f" Let's Get Guessing!\n"
-                )
+            )
             break
         else:
             print(
@@ -144,7 +144,7 @@ def guess_word():
                 print(
                     f"Incorrect, You lost a life! You now have {lives_allowed}"
                     f" {heart_emoji} 's remaining."
-                    )
+                )
 
         elif letter_guess in guessed_letters:
             print(
@@ -171,7 +171,7 @@ def guess_word():
         print(
             f"You {color_white}LOST!{styling_end}{shocked_face}\nThe word was"
             f" {color_white}{underline}{new_word}{styling_end}\n"
-            )
+        )
     else:
         print(f"Yay! You did it {face_with_hearts}\n")
     return word_makeup
@@ -187,7 +187,7 @@ def restart_game():
         play_again = input(
             f"Would you like to start the game again? {color_green}Y"
             f"{styling_end}/{color_red}N{styling_end}: "
-            ).upper()
+        ).upper()
 
         if play_again == "Y":
             print(
@@ -198,14 +198,14 @@ def restart_game():
                 play_again_2 = input(
                     f"Are you sure?: {color_green}Y{styling_end}/{color_red}N"
                     f"{styling_end}: "
-                    ).upper()
+                ).upper()
 
                 if play_again_2 == "Y":
                     print(
                         f"\nBut we were having so much fun {sad_face}\n"
                         f"Thank you for playing!{waving_hand}  If you want"
                         f" to play again simply click 'RUN PROGRAM'"
-                        )
+                    )
                     sys.exit()
                 elif play_again_2 == "N":
                     print(f"\nOH REALLY {crazy_face}")
@@ -214,13 +214,13 @@ def restart_game():
                     print(
                         f"{confused_emoji} I didn't ask for that did I?,"
                         f" please enter Y or N.\n"
-                        )
+                    )
             restart_game()
         else:
             print(
                 f"{confused_emoji} I didn't ask for that did I?, please enter"
                 f" Y or N.\n"
-                )
+            )
 
 
 def restart_functions():
@@ -241,6 +241,7 @@ def main():
     get_correct_word(list_of_words)
     guess_word()
     restart_game()
+
 
 if __name__ == "__main__":
     main()
