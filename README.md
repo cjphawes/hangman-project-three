@@ -207,7 +207,7 @@ The user is given:
 
 ## Testing
 
-Please refer to the [TESTING.md](/TESTING.md) for all test- related documentation.
+Please refer to the [TESTING.md](/TESTING.md) for all test-related documentation.
 
 #### Solved bugs
 
@@ -223,7 +223,7 @@ Please refer to the [TESTING.md](/TESTING.md) for all test- related documentatio
 
 - **Issue 2**: My secondary confirmation questions were not going to the correct function once chosen an input, causing an infinite loop.
 
-  - _Solution_: To get out of the loop i added `break` on the inner loops to break out back to the outer loop.
+  - _Solution_: To get out of the loop I added `break` on the inner loops to break out back to the outer loop.
 
 - **Issue 3**: When entering a username, if you added a space before you typed your username, it would not capitalize the first letter as designed.
   - _Solution_: A quick fix was to simply swap around my `strip()` and `capitalize()` methods so it would always strip away the spaces first before then capitalizing the username's first letter.
@@ -271,6 +271,7 @@ There were four mistakes made while committing to Github.
 
 - I used [Imageresizer](https://imageresizer.com/) for all the README.md & TESTING.md file images.
 - I used [Screen Capture](https://www.screencapture.com/) for the recording for the TESTING.md file.
+- I used [Chrome Capture Extension](https://chromewebstore.google.com/detail/chrome-capture-gif-screen/ggaabchcecdbomdcnbahdfddfikjmphe) for all of the documentation images in the TESTING.md & README.md files.
 
 ## Reminders
 
