@@ -4,13 +4,11 @@ Click [README.md](/README.md) to return back.
 
 ## Testing
 
-The program was tested constantly throughout the development process. I had multiple users try out my game to spot bugs or grammatical mistakes which they found and I corrected.
+The program was tested constantly throughout the development process. I had multiple users try out my game on multiple web browsers to spot bugs or grammatical mistakes which they found and I corrected, or noted down in the [Compatibility issues](#compatibility-issues) section.
 
 ## Validation
 
-I used the [Code Institute Python Linter](https://pep8ci.herokuapp.com/#) to ensure sure the source code throughout was [PEP8](https://legacy.python.org/dev/peps/pep-0008/) compliant.
-
-No errors were found in all .py files.
+I used the [Code Institute Python Linter](https://pep8ci.herokuapp.com/#) to ensure sure the source code throughout was [PEP8](https://legacy.python.org/dev/peps/pep-0008/) compliant. No errors were found in all .py files.
 
 - run.py
 
@@ -74,7 +72,7 @@ In Github, the final line of whitespace is removed in all my files, here is evid
 
 ---
 
-#### Compatibility testing
+### Compatibility testing
 
 Testing was completed on Google Chrome, Microsoft Edge, Firefox web browsers. As you go through the videos you will also see all of the user validation works correctly and the inputs the user makes create the correct response as per the code.
 
@@ -90,7 +88,7 @@ https://github.com/cjphawes/hangman-project-three/assets/105741584/5343ba47-4b2c
 
 https://github.com/cjphawes/hangman-project-three/assets/105741584/9c5e492c-7688-4039-a7b3-eb7926f80c18
 
-#### Compatibility issues
+### Compatibility issues
 
 - The heart emoji is a different size and color depending on the browser the user is using.
 - On the Firefox web browser the emoji's displayed half of the emoji.
