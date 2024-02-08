@@ -110,29 +110,29 @@ The user is given:
 - Once the user inputs a "**Y**", they will receive a small funny message.
 - The game will restart from the point of making the first mystery letter guess.
 
-#### User wants to end the game
+#### User wants to quit the game
 
 The user is met with a confirmation question at the start of the game and the end of the game, re-asking if they are sure they want to stop playing.
 
-##### If yes (start of game)
+##### If yes (at the start of the game)
 
 ![User wants to end the game with a yes](/documentation/doc-imgs/start_of_game_confirmation_yes.webp)
 
 The user will be given a sad message and then thanked for playing the game.
 
-##### If yes (end of game)
+##### If yes (at the end of the game)
 
 ![User wants to end the game with a yes](/documentation/doc-imgs/end_of_game_confirmation_yes.webp)
 
 The user is given a sad, yet funny message and thanks them for playing.
 
-##### If no (start of game)
+##### If no (at the start of the game)
 
 ![User wants to start the game with a yes](/documentation/doc-imgs/start_of_game_confirmation_no.webp)
 
 The user is given a motivating and funny message encouraging them to get the game started.
 
-##### If no (end of game)
+##### If no (at the end of the game)
 
 ![User wants to end the game with a no](/documentation/doc-imgs/end_of_game_confirmation_no.webp)
 
@@ -164,8 +164,8 @@ The user is given:
 
 ## Future features to implement
 
-- A simple menu rather than an input method of choosing what to select, to make it more easy to navigate.
-- Allow users to have a multiple space username.
+- A simple menu rather than an input method of choosing what to select by letter, to make it more easy to navigate.
+- Allow users to have a multiple space usernames.
 
 ---
 
