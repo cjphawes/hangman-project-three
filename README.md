@@ -253,6 +253,60 @@ There were four mistakes made while committing to Github.
 ## Deployment
 
 - The program was deployed using [Heroku](https://dashboard.heroku.com/)
+- The program can be reached by this [link](https://hangman-havoc-5a5a826a9d8e.herokuapp.com/)
+
+### Deploy program as a local application
+
+_Notes_:
+
+1. This project requires you to have **Python** installed on your local device. If you have not installed it already please follow [Python download](https://www.python.org/downloads/).
+2. This project will also need **PIP** installed to allow the
+   installation of modules the application uses (PIP is usually installed within your Python installation, if not, follow [PIP installation](https://pip.pypa.io/en/stable/installation/) on how to set it up).
+
+Create a local copy of the Github repository by following one of the two processes below:
+
+1. Download ZIP file:
+
+   - Go to the [Hangman Havoc Github repository](https://github.com/cjphawes/hangman-project-three).
+   - Click on the green **Code** button and download the ZIP file containing the project.
+   - Extract the ZIP file to a location of your choice on your device.
+
+2. Clone the repository:
+   1. Open a folder on your computer using the **Command Prompt** on Windows, **Terminal** on Mac or the respective on your device.
+   2. Run the following command:
+      - `git clone https://github.com/cjphawes/hangman-project-three.git`
+
+**OR**
+
+Alternatively, if using Gitpod, click below to create your own workspace using this repository.
+
+[![Open in Gitpod](/documentation/doc-imgs/gitpod_img.svg)](https://gitpod.io/new#https://github.com/cjphawes/hangman-project-three)
+
+- Install Python module dependencies:
+  - Run the command:
+    - `pip freeze > requirements.txt`
+  - Create a `.venv` virtual environment, delete and create a new one.
+  - Add the requirements.txt, by selecting it from the dropdown menu.
+- To access the program, run the command:
+  - `python run.py`
+
+### Deploy as a remote web application
+
+1. Clone the repository
+
+   1. Open a folder on your computer using the **Command Prompt** on Windows, **Terminal** on Mac or the respective on your device.
+   2. Run the following command:
+      - `git clone https://github.com/cjphawes/hangman-project-three.git`
+
+2. Create your own Github repository to host the code.
+3. To set the remote repository location to your repository, run the command:
+
+   - `git remote set-url origin <YOUR GITHUB REPO PATH>`
+
+4. _Push_ the files to your repository to host the code, running the command:
+   - `git push`
+5. Create a Heroku account, if you haven't already, click [Heroku sign-up](https://signup.heroku.com/).
+6. Create a new application
 
 ---
 
