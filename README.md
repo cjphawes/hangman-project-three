@@ -307,18 +307,22 @@ Alternatively, if using Gitpod, click below to create your own workspace using t
    - `git push`
 5. Create a Heroku account, if you haven't already, click [Heroku sign-up](https://signup.heroku.com/).
 6. Create a new application, from selecting **Create new app** from the dropdown. Follow the steps on the page and click **Create app**.
-   **Insert Video here**
-7. Navigate to the Deploy tab, opening up the Deploy section.
+   
+
+https://github.com/cjphawes/hangman-project-three/assets/105741584/563b5011-fb62-4d0a-9de5-d0fd3013de92
+
+
+8. Navigate to the Deploy tab, opening up the Deploy section.
    ![Deploy tab navigation](/documentation/doc-imgs/deploy_tab_nav_heroku.webp)
-8. Link your Github account and connect the application to the repository you just created.
+9. Link your Github account and connect the application to the repository you just created.
    ![Linking Github account](/documentation/doc-imgs/connect_to_github_heroku.webp)
-9. Navigate to the Settings tab, opening up the Settings section.
+10. Navigate to the Settings tab, opening up the Settings section.
    ![Settings tab navigation](/documentation/doc-imgs/settings_tab_nav_heroku.webp)
-10. Click Add Buildpack.
+11. Click Add Buildpack.
     ![Add buildpack button](/documentation/doc-imgs/add_buildpacks_heroku.webp)
-11. Add the Python and Node.js buildpacks in the following order.
+12. Add the Python and Node.js buildpacks in the following order.
     ![Buildpacks](/documentation/doc-imgs/buildpacks_heroku.webp)
-12.
+13.
 
 ---
 
