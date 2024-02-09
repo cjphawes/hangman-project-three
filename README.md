@@ -286,7 +286,7 @@ Alternatively, if using Gitpod, click below to create your own workspace using t
   - Run the command:
     - `pip freeze > requirements.txt`
   - Create a `.venv` virtual environment, delete and create a new one.
-  - Add the requirements.txt, by selecting it from the dropdown menu. This will hold all your dependencies needed to run the program.
+  - Add the requirements.txt, by selecting it from the dropdown menu. This will hold all your dependencies needed to run the program[^1].
 - To access the program, run the command:
   - `python run.py`
 
@@ -337,7 +337,7 @@ https://github.com/cjphawes/hangman-project-three/assets/105741584/563b5011-fb62
 18. Once complete, click **View** to open the program in the web browser.
     ![View app button](/documentation/doc-imgs/view_app_button.webp)
 
----
+[^1]: Dependencies contain the Python modules needed to run the program correctly, they are held in the `requirements.txt` file. For this project the dependencies are [Emoji](https://pypi.org/project/emoji/) and [Colorama](https://blog.finxter.com/how-to-print-bold-text-in-python/).
 
 ## Credits
 
@@ -349,13 +349,10 @@ https://github.com/cjphawes/hangman-project-three/assets/105741584/563b5011-fb62
 - The title of Hangman Havoc used [ASCII ](https://ascii.co.uk/text) text.
 - I used the [ANSI Escape Sequence](https://blog.finxter.com/how-to-print-bold-text-in-python/) method for making words/numbers bold.
 - I used the [Colorama](https://blog.finxter.com/how-to-print-bold-text-in-python/) package for the coloring of text, using [Replit](https://replit.com/talk/ask/How-do-you-change-text-colors-and-fonts-in-python/122041) for the different colors.
+- I used [Emoji](https://pypi.org/project/emoji/) package for being able to display my emoji's in the terminal.
 
 #### Media
 
 - I used [Imageresizer](https://imageresizer.com/) for all the README.md & TESTING.md file images.
 - I used [Screen Capture](https://www.screencapture.com/) for the recording for the TESTING.md file.
 - I used [Chrome Capture Extension](https://chromewebstore.google.com/detail/chrome-capture-gif-screen/ggaabchcecdbomdcnbahdfddfikjmphe) for all of the documentation images in the TESTING.md & README.md files.
-
-## Reminders
-
-- Your dependencies must be placed in the `requirements.txt` file
