@@ -286,7 +286,7 @@ Alternatively, if using Gitpod, click below to create your own workspace using t
   - Run the command:
     - `pip freeze > requirements.txt`
   - Create a `.venv` virtual environment, delete and create a new one.
-  - Add the requirements.txt, by selecting it from the dropdown menu.
+  - Add the requirements.txt, by selecting it from the dropdown menu. This will hold all your dependencies needed to run the program.
 - To access the program, run the command:
   - `python run.py`
 
@@ -307,22 +307,35 @@ Alternatively, if using Gitpod, click below to create your own workspace using t
    - `git push`
 5. Create a Heroku account, if you haven't already, click [Heroku sign-up](https://signup.heroku.com/).
 6. Create a new application, from selecting **Create new app** from the dropdown. Follow the steps on the page and click **Create app**.
-   
 
 https://github.com/cjphawes/hangman-project-three/assets/105741584/563b5011-fb62-4d0a-9de5-d0fd3013de92
 
-
-8. Navigate to the Deploy tab, opening up the Deploy section.
+8. Navigate to the **Deploy** tab, opening up the Deploy section.
    ![Deploy tab navigation](/documentation/doc-imgs/deploy_tab_nav_heroku.webp)
 9. Link your Github account and connect the application to the repository you just created.
    ![Linking Github account](/documentation/doc-imgs/connect_to_github_heroku.webp)
-10. Navigate to the Settings tab, opening up the Settings section.
-   ![Settings tab navigation](/documentation/doc-imgs/settings_tab_nav_heroku.webp)
-11. Click Add Buildpack.
+10. Navigate to the **Settings** tab, opening up the Settings section.
+    ![Settings tab navigation](/documentation/doc-imgs/settings_tab_nav_heroku.webp)
+11. Click **Add Buildpack**.
     ![Add buildpack button](/documentation/doc-imgs/add_buildpacks_heroku.webp)
-12. Add the Python and Node.js buildpacks in the following order.
+12. Add the **Python** and **Node.js** buildpacks in the following order.
     ![Buildpacks](/documentation/doc-imgs/buildpacks_heroku.webp)
-13.
+13. Click **Reveal Configs**.
+    ![Reveal config var button](/documentation/doc-imgs/reveal_configs_button_heroku.webp)
+14. Add **1** Config Var, provided by [Code Institute](https://codeinstitute.net/global/):
+    - **KEY**: PORT
+    - **VALUE**: 8000
+
+![Config var example](/documentation/doc-imgs/config_var_heroku.webp)
+
+15. Return back to the **Deploy** tab, opening up the Deploy section.
+    ![Deploy tab navigation](/documentation/doc-imgs/deploy_tab_nav_heroku.webp)
+16. At the bottom of the page, click **Deploy** Branch.
+    ![Deploying branch](/documentation/doc-imgs/deploy_branch.webp)
+17. Wait while Heroku is deploying your application
+    ![Waiting for Heroku to deploy app](/documentation/doc-imgs/waiting_for_deployment.webp)
+18. Once complete, click **View** to open the program in the web browser.
+    ![View app button](/documentation/doc-imgs/view_app_button.webp)
 
 ---
 
