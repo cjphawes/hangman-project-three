@@ -55,7 +55,7 @@ def enter_game():
                     print(
                         f"\nBut we didn't even get to play together {sad_face}"
                         f"\nThank you for playing!{waving_hand}  If you want"
-                        f" to play again simply click 'RUN PROGRAM'"
+                        f" to play again simply click 'RUN PROGRAM'\n"
                     )
                     sys.exit()
                 elif user_response_2 == "N":
@@ -85,19 +85,22 @@ def input_username():
     invalid inputs
     """
     while True:
-        username = input("What will your username be?: ").strip().capitalize()
-
-        if username.isalpha():
+        try:
+            username = input(
+                "What will your username be?: ").strip().capitalize()
+            if not username.isalpha():
+                raise ValueError(
+                    f"{prohibited} {username} is an INVALID username,"
+                    f" please use one without numbers, special characters or"
+                    f" spaces.\n"
+                )
             print(
                 f"\nAwesome username {username},"
                 f" Let's Get Guessing!\n"
             )
             break
-        else:
-            print(
-                Fore.RED + f"{prohibited} {username} is an INVALID username,"
-                f" please use one without numbers, special characters or"
-                f" spaces.\n" + Style.RESET_ALL)
+        except ValueError as e:
+            print(Fore.RED + str(e) + Style.RESET_ALL)
     return username
 
 
@@ -204,7 +207,7 @@ def restart_game():
                     print(
                         f"\nBut we were having so much fun {sad_face}\n"
                         f"Thank you for playing!{waving_hand}  If you want"
-                        f" to play again simply click 'RUN PROGRAM'"
+                        f" to play again simply click 'RUN PROGRAM'\n"
                     )
                     sys.exit()
                 elif play_again_2 == "N":
