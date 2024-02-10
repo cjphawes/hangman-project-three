@@ -2,11 +2,11 @@
 
 ## Hangman Havoc
 
-**Hello Fellow Coders!**
+**Hello fellow coders!**
 
 Welcome to Hangman Havoc, a terminal based Python game. This game is my attempt at providing humorous version of an iconic game for pleasure.
 
-It is aimed at all ages, for anyone who wants to have some fun, laugh and try to guess words correctly!
+The target audience for Hangman Havoc is aimed at all ages, for anyone who wants to have some fun, laugh and try to guess words correctly!
 
 Try to not lose all your lives! [Hangman Havoc](https://hangman-havoc-5a5a826a9d8e.herokuapp.com/)
 
@@ -28,15 +28,37 @@ Link to the game: [https://hangman-havoc-5a5a826a9d8e.herokuapp.com/](https://ha
 
 ---
 
-## User Stories
+## Goals
 
-#### First Time Visitor Goals
+#### My goals
+
+For this project I have aimed:
+
+- For the user to consistently play a guessing game repeatedly until they want to stop playing.
+
+- For the user to find the game fun, challenging and provide a satisfactory experience.
+
+- To provide a working game that a single user can play against themselves.
+
+#### External user goals
+
+For this project the user wants to be able to:
+
+- Make sure the game is difficult enough to challenge their vocabulary skills and potentially learn new words.
+- Have a relaxing experience, that is enjoyable yet stimulating.
+- Beat the game on a consistent basis.
+
+---
+
+## User stories
+
+#### First time visitor goals
 
 - As a first time visitor, I want to be able to navigate through the game without any problems.
 - As a first time visitor, I want the game to be fun and enticing.
 - As a first time visitor, I want to be able to understand the rules of how to play without any questions.
 
-#### Frequent Visitor Goals
+#### Frequent visitor goals
 
 - As a frequent visitor, I want to be able to have a more visual depiction of my lives diminishing after an incorrect guess.
 - As a frequent visitor, I would like to not have to read the rules every time I restart the game.
@@ -166,6 +188,8 @@ The user is given:
 
 - A simple menu rather than an input method of choosing what to select by letter, to make it more easy to navigate.
 - Allow users to have a multiple space usernames.
+- Keep a running total of how many words the user gets correct in a row.
+- Have a scoreboard that can be updated with scores.
 
 ---
 
@@ -228,7 +252,7 @@ Please refer to the [TESTING.md](/TESTING.md) for all test-related documentation
 - **Issue 3**: When entering a username, if you added a space before you typed your username, it would not capitalize the first letter as designed.
   - _Solution_: A quick fix was to simply swap around my `strip()` and `capitalize()` methods so it would always strip away the spaces first before then capitalizing the username's first letter.
 
-#### Unsolved Bugs
+#### Unsolved bugs
 
 None.
 
@@ -237,16 +261,16 @@ None.
 There were four mistakes made while committing to Github.
 
 - **ae9195d** - "feat:adjusted formatting to conform to PEP8 standards"
-  _**Supposed to be**_: "feat:adjust formatting to conform to PEP8 standards"
+  _Supposed to be_: "feat:adjust formatting to conform to PEP8 standards"
 
 - **336d117** - "maint: add dependencies go my requirements.txt file"
-  _**Supposed to be**_: "maint: add dependencies to my requirements.txt file"
+  _Supposed to be_: "maint: add dependencies to my requirements.txt file"
 
 - **1352315** - "remove parameters from functions and try/except statement"
-  _**Supposed to be**_: "feat:remove parameters from functions and try/except statement"
+  _Supposed to be_: "feat:remove parameters from functions and try/except statement"
 
 - **ee40f58** - "add multiple 'g' just to see if app has updated"
-  _**Supposed to be**_: "feat:add multiple 'g' just to see if app has updated"
+  _Supposed to be_: "feat:add multiple 'g' just to see if app has updated"
 
 ---
 
