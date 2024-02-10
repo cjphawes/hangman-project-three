@@ -7,11 +7,13 @@
     "Colorama",
     "emojize",
     "Imageresizer",
+    "Kylie",
     "Lucidchart",
     "maint",
     "venv",
     "webp",
-    "winky"
+    "winky",
+    "Ying"
   ],
   "editor.wordWrapColumn": 80,
   "editor.rulers": [79]
