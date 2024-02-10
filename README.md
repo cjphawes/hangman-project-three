@@ -374,7 +374,7 @@ https://github.com/cjphawes/hangman-project-three/assets/105741584/563b5011-fb62
 - I used the [ANSI Escape Sequence](https://blog.finxter.com/how-to-print-bold-text-in-python/) method for making words/numbers bold.
 - I used the [Colorama](https://blog.finxter.com/how-to-print-bold-text-in-python/) package for the coloring of text, using [Replit](https://replit.com/talk/ask/How-do-you-change-text-colors-and-fonts-in-python/122041) for the different colors.
 - I used [Emoji](https://pypi.org/project/emoji/) package for being able to display my emoji's in the terminal.
-- I took inspiration for the lives concept from [Kylie Ying](https://www.youtube.com/watch?v=8ext9G7xspg&t=5789s) and her [Github repository](https://github.com/kying18/hangman)
+- I took inspiration for the hangman concept and lives concept from [Kylie Ying](https://www.youtube.com/watch?v=8ext9G7xspg&t=5789s) and her [Github repository](https://github.com/kying18/hangman)
 
 #### Media
 
