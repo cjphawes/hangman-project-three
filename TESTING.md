@@ -6,7 +6,7 @@ Click [README.md](/README.md#testing) to return back.
 
 The program was tested constantly throughout the development process. I had multiple users try out my game on multiple web browsers to spot bugs or grammatical mistakes which they found and I corrected, or noted down in the [Compatibility issues](#compatibility-issues) section.
 
-## Validation
+### Validation
 
 I used the [Code Institute Python Linter](https://pep8ci.herokuapp.com/#) to ensure sure the source code throughout was [PEP8](https://legacy.python.org/dev/peps/pep-0008/) compliant. No errors were found in all .py files.
 
@@ -51,7 +51,7 @@ In Github, the final line of whitespace is removed in all my files, here is evid
 
 ---
 
-## Manual Testing
+### Manual Testing
 
 | Action                                                 | Testing                                                  | Result                                                                                                                                                                                                       | Evidence                                                                                                                                                                                                      |
 | ------------------------------------------------------ | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
